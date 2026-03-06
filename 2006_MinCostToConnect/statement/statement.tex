@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เดินเที่ยวนิวยอร์ก}
+
+ถนนในแมนแฮตตันเมืองนิวยอร์กมีผังเมืองเป็นตารางเกือบสมบูรณ์
+กำหนดอาร์เรย์ของจุดชุดหนึ่ง\texttt{xi,\ yi}เป็นพิกัดสมมติแทนสถานที่ในแมนแฮตตันที่
+ดร.ต๋อยจะต้องเดินทางไปตามเส้นทาง\textbf{( ไปทางเหนือ, ใต้, ตะวันออก, หรือตะวันตก
+)}ระยะทางจะ\textbf{คิดแบบระยะทางแมนแฮตตัน ( Manhattan distance
+)}สำหรับเชื่อมต่อจุด\texttt{xi,\ yi}กับ\texttt{xj,\ yj}ซึ่งคำนวณได้จาก{}{\texttt{\textbar{}}}\texttt{xi–xj}{\texttt{\textbar{}\ +\ \textbar{}}}\texttt{yi–yj}{\texttt{\textbar{}}}{}โดยที่\texttt{\textbar{}v\textbar{}}หมายถึงค่าสัมบูรณ์ของ\texttt{v}
+
+\textbf{\ul{ให้หาระยะทางสั้นที่สุดที่
+ดร.ต๋อยจะหาเส้นทางที่เชื่อมต่อทุกจุด}\ul{ที่กำหนดให้}}นั่นคือจะต้องมีเส้นเชื่อม 1
+เส้นระหว่างจุดสองจุด
+
+\hfill\break
+
+\textbf{ตัวอย่าง}
+
+\begin{quote}
+\textbf{Input:}
+
+5
+
+0 0
+
+2 2
+
+3 10
+
+5 2
+
+7 0
+
+\textbf{Output:}
+
+20
+\end{quote}
+
+\hfill\break
+
+\includegraphics[width=1.875in,height=2.39583in,alt={A graph with black dots Description automatically generated}]{https://lh7-us.googleusercontent.com/l2SHVHbo3qXHzWJNrHH8_ZNTil1A_8DfAW4r9nvP58EAwXblA4cMld7KYNKCq1XjDPUuzfpvNu5r_lxHo7rappv7bLKjGgJyZ-fAB6vOqcl7MkwpIo8F4KTfbMiQKaB6Bhr7yYXbBIcPF-zyYbOmfA}\includegraphics[width=1.875in,height=2.39583in,alt={A graph of a cost Description automatically generated}]{https://lh7-us.googleusercontent.com/DVKIPkGBewkgP6Tv6BeqybSoKxjxNxRUfNq-3pVu9rJyLY8MZ3DYcfkJTE1ETIVxZYxOSxRFoGSdVvRIzFD4pE2SYiVeqLYHIfFpf7TmbtiVGJkv5ZCur6EATVj-jU0vZuAfpsiFKs7_3b7xe1jhjA}\\
+
+
+\subsection*{Input}
+เป็นบรรทัดแรก จำนวนจุด\texttt{N}
+
+บรรทัดที่ 2 จนถึง บรรทัดที่\texttt{N\ +\ 1}เป็นพิกัด\texttt{xi\ yi}คั่นกลางด้วยช่องว่าง
+1 ช่อง{โดย}{พิกัดทุกค่าเป็นจำนวนเต็มบวก}
+
+
+\subsection*{Output}
+เป็นจำนวนเต็มบวกแทนระยะทางแมนแฮตตันที่\ul{\textbf{ต่ำสุด}}ที่เชื่อมต่อทุกจุดที่กำหนด\\
+
+
+\end{document}

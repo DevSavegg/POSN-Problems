@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{ศึกสุดท้าย}
+
+\section{\texorpdfstring{\textbf{6.ศึกสุดท้าย}}{6.ศึกสุดท้าย}}\label{uxe28uxe01uxe2auxe14uxe17uxe32uxe22}
+
+สงครามด่านสุดท้ายสำหรับเหล่านักรบ\texttt{heroes}กลุ่มหนึ่งที่กำลังจะต่อสู้กับปีศาจ\texttt{monsters}จำนวนหนึ่ง
+กำหนดอาร์เรย์เลขจำนวนเต็มบวก (เริ่มดัชนีแรกที่1)ให้สองชุด
+ได้แก่\texttt{heroes}เป็นพลังชีวิตของเหล่านักรบ\texttt{n}คน
+และ\texttt{monsters}เป็นของปีศาจ\texttt{m}ตัว กำหนดว่า
+นักรบคนที่\texttt{i}สามารถปราบปีศาจตัวที่\texttt{j}ได้ก็ต่อเมื่อ\texttt{monsters{[}j{]}\textless{}=\ heroes{[}i{]}}
+
+นอกจากนี้คุณยังได้อาร์เรย์เลขจำนวนเต็มบวก\texttt{coin}(เริ่มดัชนีแรกที่1)ความยาวmแทนจำนวนเหรียญ
+นักรบที่ปราบปีศาจตัวที่\texttt{k}ได้จะได้รับเหรียญ\texttt{coin{[}k{]}}
+
+ให้ตอบมาเป็นอาร์เรย์\texttt{ans}ความยาว\texttt{n}โดยที่\texttt{ans{[}p{]}}เป็นเหรียญสูงสุดที่นักรบคนที่\texttt{p}สามารถสะสมได้ในสงครามครั้งสุดท้ายนี้
+ทั้งนี้...
+
+1.พลังชีวิตของนักรบจะ\ul{ไม่}ลดลงหลังจากปราบปีศาจแต่ละตัว
+
+2.นักรบหลายคนสามารถปราบปีศาจตัวหนึ่งๆได้ แต่ปีศาจแต่ละตัวจะถูกปราบโดยนักรบเพียงคนเดียว
+
+
+\subsection*{Input}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+บรรทัดที่ 1 & \begin{minipage}[t]{\linewidth}\raggedright
+เลขจำนวนเต็มบวก เป็นค่า n และ m เว้นด้วยช่องว่าง~ ~ ~ ~ ~ ~0 \textless{} n, m
+\textless{} 800,000\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+บรรทัดที่ 2\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+ชุดเลขจำนวนเต็มบวกเป็นพลังชีวิตของเหล่านักรบ เว้นด้วยช่องว่าง~ ~ ~ ~ ~ ~ 0
+\textless heroes \textless{} 200,000\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+บรรทัดที่ 3\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+ชุดเลขจำนวนเต็มบวกเป็นพลังชีวิตของปีศาจ monsters เว้นด้วยช่องว่าง~ ~ 0 \textless{}
+monsters \textless{} 200,000\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+บรรทัดที่ 4\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+ชุดเลขจำนวนเต็มบวกเป็นค่าเหรียญ coins เว้นด้วยช่องว่าง~ ~ ~ ~ 0 \textless{} coins
+\textless{} 20,000\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Output}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+บรรทัดที่ 1 & จำนวนเหรียญทั้งหมดที่ฮีโร่แต่ละคนสามารถรวบรวมได้ เว้นด้วยช่องว่าง \\
+\end{longtable}
+}
+
+
+\end{document}

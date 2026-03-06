@@ -1,0 +1,5 @@
+big 7
+cream 7
+calm 5
+dog 5
+happy 5

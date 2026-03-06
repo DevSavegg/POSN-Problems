@@ -1,0 +1,4 @@
+Odd numbers: 61 93 23 69 
+Count of odd: 4
+Even numbers: 54 56 24 18 -18 18 46 36 
+Count of even: 8

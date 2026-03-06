@@ -1,0 +1,4 @@
+1. Rectangle
+2. Triangle
+3. Circle
+Enter your choice: Enter the width: Enter the height: The area of the rectangle is: 0.00

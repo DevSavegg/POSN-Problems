@@ -1,0 +1,4 @@
+100
+apricot apple pineapple apple cantaloupe apple jackfruit strawberry raspberry cantaloupe dragonfruit avocado grapefruit raspberry peach plum durian apple peach rambutan rambutan tangerine pineapple dragonfruit passion tangerine apple watermelon orange pineapple watermelon dragonfruit cantaloupe apricot blueberry coconut cantaloupe tangerine banana blueberry cherry guava coconut mango durian raspberry dragonfruit grape papaya strawberry grapefruit plum strawberry guava coconut lemon grape watermelon passion kiwi tangerine raspberry watermelon jackfruit lemon mango peach banana apricot watermelon lemon coconut clementine clementine avocado papaya kiwi pineapple grape jackfruit avocado peach kiwi clementine apple strawberry jackfruit banana lemon apple plum raspberry kiwi cherry grapefruit plum apple watermelon cantaloupe coconut 
+pineapple
+watermelon

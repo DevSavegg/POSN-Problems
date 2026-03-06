@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{รวมบวกสูงสุด}
+
+กำหนดอาร์เรย์ของเลขจำนวนเต็ม\texttt{nums}ขนาดความยาว\texttt{n}เป็นชนิดวง
+(circular array)
+ให้หาค่าผลบวก\textbf{\ul{สูงสุด}}ที่เป็นไปได้ของอาร์เรย์\texttt{nums}
+
+\hfill\break
+
+ทั้งนี้
+อาร์เรย์ชนิดวง\texttt{(circular\ array)}หมายถึงอาร์เรย์ที่ปลายท้ายวนต่อเข้ากับจุดต้นของอาร์เรย์
+นั่นคือ
+ตัวถัดไปของ\texttt{nums{[}i{]}}คือ\texttt{nums{[}(i\ +\ 1)\ \%\ n{]}}และตัวก่อนหน้าของ\texttt{nums{[}i{]}}คือ\texttt{nums{[}(i\ -\ 1\ +\ n)\ \%\ n{]}}\\
+
+\hfill\break
+
+\textbf{ตัวอย่าง}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+4\\
+1 0 0 1\strut
+\end{minipage} & 2 & \begin{minipage}[t]{\linewidth}\raggedright
+subarray {[}1 0 0 1{]} or {[}1 1{]}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+5 -3 5\\
+\strut
+\end{minipage} & 10 & \begin{minipage}[t]{\linewidth}\raggedright
+subarray {[}5 5{]} // 5 + 5 = 10\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+14\\
+-6 6 3 -4 -10 -1 2 -4 -9 8 -3 -11 5 5\\
+\strut
+\end{minipage} & 13 & subarray {[}5 5 -6 6 3{]} // +5 +5 -6 +6 +3 =
+13 \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดแรก จำนวนเต็ม\texttt{N}เป็นขนาดของอาร์เรย์\texttt{arr}
+
+{บรรทัดที่สอง เป็นชุดเลขจำนวนเต็ม{แต่ละค่าจะเว้นด้วยช่องว่าง}}\\
+\strut \\
+
+
+\subsection*{Output}
+{ผลบวก}{\ul{\textbf{สูงสุด}}}{ที่เป็นไปได้ของอาร์เรย์}\\
+
+
+\end{document}

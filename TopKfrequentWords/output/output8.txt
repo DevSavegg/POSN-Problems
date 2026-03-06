@@ -1,0 +1,6 @@
+apple 7
+slowly 7
+on 6
+sleep 6
+calm 5
+elephant 5

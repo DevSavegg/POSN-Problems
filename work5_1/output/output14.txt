@@ -1,0 +1,2 @@
+Sum of entered numbers: 267
+Numbers in array: 81 26 63 87 10

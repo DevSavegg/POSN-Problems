@@ -1,0 +1,4 @@
+Odd numbers: 45 25 93 47 53 17 
+Count of odd: 6
+Even numbers: 62 -14 60 30 -14 -2 16 
+Count of even: 7

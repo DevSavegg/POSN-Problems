@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{หาคำซ้ำ}
+
+กำหนดอาร์เรย์\texttt{wordlist}ของคำ\texttt{(string)}มาชุดหนึ่ง และคำ 2
+คำที่สุ่มมาจาก\texttt{wordlist}นี้ ให้หาระยะห่าง\textbf{\ul{ที่สั้นที่สุด}}ของทั้ง 2
+คำนั้นภายใน\texttt{wordlist}
+
+\hfill\break
+
+\textbf{ตัวอย่างที่ 1}
+
+\begin{quote}
+{Example1:}
+
+{plum pineapple grape}\ul{\mbox{\texttt{lemon}}}{}{pear apple plum kiwi
+blueberry mango
+durian}\ul{\mbox{\texttt{lemon}}}{avocado}\ul{\mbox{\texttt{passion}}}
+
+{lemon}
+
+{passion}
+
+{Answer:}{2}
+\end{quote}
+
+\textbf{ตัวอย่างที่ 2}
+
+\begin{quote}
+{Example2:}
+
+{clementine}\ul{\mbox{\texttt{pineapple}}}{pear coconut
+peach}\ul{\mbox{\texttt{apricot}}}{rambutan cantaloupe cherry
+avocado}\ul{\mbox{\texttt{pineapple}}}
+
+{apricot}
+
+{pineapple}
+
+{Answer:}{4}
+\end{quote}
+
+\textbf{\hfill\break
+}
+
+
+\subsection*{Input}
+บรรทัดที่ 1 เป็นจำนวนชุดของคำ (string)
+
+บรรทัดที่ 2 เป็นชุดของคำ (string) ที่เว้นด้วยช่องว่าง 1 ช่อง
+
+บรรทัดที่ 3 และ 4 เป็นคำที่สุ่มเลือกมาจากบรรทัดที่ 1
+
+
+\subsection*{Output}
+เลขจำนวนเต็ม เป็นระยะห่างที่สั้นที่สุดของทั้ง 2 คำนั้นใน\texttt{wordlist}\\
+
+
+\end{document}

@@ -1,0 +1,4 @@
+calm 11
+well 11
+angry 9
+banana 9

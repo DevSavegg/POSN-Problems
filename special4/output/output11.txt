@@ -1,0 +1,4 @@
+1. Rectangle
+2. Triangle
+3. Circle
+Enter your choice: Enter the radius: The area of the circle is: 0.00

@@ -1,0 +1,16 @@
+swim 25
+apple 23
+on 23
+sad 22
+fast 21
+high 20
+cream 19
+jump 19
+about 18
+dog 18
+hard 18
+sing 18
+small 18
+quiet 17
+sleep 17
+soft 17

@@ -1,0 +1,2 @@
+Maximum number: 7
+Minimum number: 7

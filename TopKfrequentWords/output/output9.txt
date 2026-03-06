@@ -1,0 +1,7 @@
+elephant 10
+loud 7
+apple 6
+dark 6
+dog 6
+and 5
+angry 5

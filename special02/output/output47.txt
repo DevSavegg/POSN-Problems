@@ -1,0 +1,4 @@
+Odd numbers: 
+Count of odd: 0
+Even numbers: 16 
+Count of even: 1

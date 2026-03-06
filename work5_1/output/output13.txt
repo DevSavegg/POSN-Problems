@@ -1,0 +1,2 @@
+Sum of entered numbers: 310
+Numbers in array: 71 5 92 84 58

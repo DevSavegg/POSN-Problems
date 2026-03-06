@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{สายสืบ}
+
+วริยาได้รับงานหนึ่งจากผู้จ้างวานให้ปลอมตัวเข้าไปทำงานในบริษัทยักษ์ใหญ่เจ้าหนึ่งที่ให้บริการแอพลิเคชันด้าน
+social networks สิ่งที่ผู้ว่าจ้างต้องการคือให้ดูว่ามี user ใดบ้างที่มีโอกาสเป็นคนคนเดียวกัน
+
+แอพลิเคชัน social networks นี้มี n account เรียงลำดับตั้งแต่ 1 ถึง n ซึ่งบาง account
+ก็เป็นเพื่อนกัน (หาก I เป็นเพื่อนกับ j ถือว่า j เป็นเพื่อนกับ I เช่นเดียวกัน)
+
+คู่ account (i, j) จะถูกเรียกว่าเป็น "คู่เหมือน" ในกรณีที่ สำหรับ account k ใดๆ ที่ไม่ใช่
+i หรือ j จะต้องเป็นไปตามเงื่อนไขอย่างใดอย่างหนึ่ง:
+
+\begin{enumerate}
+\tightlist
+\item
+  โปรไฟล์ k เป็นเพื่อนกับทั้ง i และ j
+\item
+  โปรไฟล์ k ไม่ได้เป็นเพื่อนกับทั้ง i และ j
+\end{enumerate}
+
+โดยที่ i และ j จะเป็นเพื่อนกันหรือไม่ก็ได้
+
+\textbf{งานของคุณ}-- ช่วยวริยาคำนวณจำนวนคู่ account ที่เป็น "คู่เหมือน" โดยที่ (a, b)
+กับ (b, a) ถือว่าเป็นคู่เดียวกัน
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+input
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+output
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+comment
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+3 3\\
+1 2\\
+2 3\\
+1 3\\
+\strut
+\end{minipage} & 3 & \begin{minipage}[t]{\linewidth}\raggedright
+ในกรณีนี้ ทุก account มีความสัมพันธ์กับ account อื่น ๆ ซึ่งสามารถจับคู่ account ได้ทั้งหมด
+3 คู่ ได้แก่ (1, 2), (1, 3), (2, 3)\\
+\strut
+\end{minipage} \\
+3 0 & 3 & \begin{minipage}[t]{\linewidth}\raggedright
+ในกรณีนี้ ไม่มีความสัมพันธ์เพื่อนใด ๆ เลย ดังนั้นทุกคู่ account จะเป็น "คู่เหมือน" (เพราะไม่มี
+account ไหนที่เป็นเพื่อนกัน)\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+4 1\\
+1 3\\
+\strut
+\end{minipage} & 2 & \begin{minipage}[t]{\linewidth}\raggedright
+ในกรณีนี้มีเพียงแค่ความสัมพันธ์เพื่อนระหว่าง account 1 และ 3 ดังนั้นคู่ account ที่เป็น
+"คู่เหมือน" ได้แก่ (1, 3) และ (2, 4)\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดที่ 1: จำนวนเต็ม n (จำนวน account ทั้งหมด 1 ≤ n ≤ 106) และ m
+(จำนวนความพันธ์ที่เป็นเพื่อนกัน 1 ≤ m ≤ 106) แยกด้วยช่องว่าง
+
+บรรทัดที่ 2 เป็นต้นไป จำนวน m บรรทัด: ความสัมพันธ์ที่เป็นเพื่อนกันในรูปแบบ v u โดยที่
+1 ≤ v, u ≤ n, v ≠ u ซึ่งหมายถึง account v และ account u เป็นเพื่อนกัน
+ต้องมั่นใจว่าใน input มีแค่คู่ v u หรือ u v แค่อย่างใดอย่างหนึ่ง และ ไม่มี v v หรือ u u
+
+
+\subsection*{Output}
+บรรทัดที่ 1: จำนวนคู่ account ที่เป็น "คู่เหมือน"\\
+
+
+\end{document}

@@ -1,0 +1,6 @@
+dog 8
+elephant 8
+sad 8
+sleep 8
+about 7
+hard 7

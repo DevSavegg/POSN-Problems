@@ -1,0 +1,4 @@
+1. Rectangle
+2. Triangle
+3. Circle
+Enter your choice: Enter the base: Enter the height: The area of the triangle is: 25.00

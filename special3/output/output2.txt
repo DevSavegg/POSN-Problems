@@ -1,0 +1,8 @@
+Input array elements :
+Value 5 Frequency 1 time(s)
+Value 6 Frequency 1 time(s)
+Value 8 Frequency 1 time(s)
+Value 25 Frequency 1 time(s)
+Value 30 Frequency 1 time(s)
+Value 50 Frequency 1 time(s)
+Value 75 Frequency 1 time(s)

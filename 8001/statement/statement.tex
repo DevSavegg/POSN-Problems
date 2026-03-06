@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{พาลินโดรมได้หรือไม่}
+
+กำหนดข้อความ (string)\texttt{s}ให้
+ให้ตอบว่า\texttt{s}สามารถสับตำแหน่งอักขระในนั้นแล้วกลายเป็นพาลินโดรม (Palindrome)
+ได้หรือไม่
+
+{\textbf{Palindrome หมายถึงข้อความที่อ่านจากหน้าไปหลังแล้วเหมือนกับอ่านจากหลังไปหน้า
+เช่น abcba, level, kayak, noon, refer, otto}}\\
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก\\
+\strut
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+code\\
+\strut
+\end{minipage} & N & - \\
+\begin{minipage}[t]{\linewidth}\raggedright
+aab\\
+\strut
+\end{minipage} & Y & aba \\
+\begin{minipage}[t]{\linewidth}\raggedright
+a\\
+\strut
+\end{minipage} & Y & \begin{minipage}[t]{\linewidth}\raggedright
+a is palindrome by itself\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+carreac\\
+\strut
+\end{minipage} & Y & \begin{minipage}[t]{\linewidth}\raggedright
+care\ul{rac}\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+\textbf{คำแนะนำ}
+
+\begin{enumerate}
+\item
+  พิจารณาพาลินโดรมของความยาวคี่และคู่ คุณสังเกตเห็นความแตกต่างอะไร?
+\item
+  นับความถี่ของอักขระแต่ละตัว
+\item
+  หากอักขระแต่ละตัวปรากฏเป็นจำนวนเท่ากัน จะต้องเป็นพาลินโดรม แล้วตัวละครที่เกิดเลขคี่ล่ะ?
+\end{enumerate}
+
+
+\subsection*{Input}
+ข้อความ\texttt{s}\texttt{1\ \textless{}=s.length\ \textless{}=\ 100,000}\textbf{}\\
+
+
+\subsection*{Output}
+\texttt{Y}หรือ\texttt{N}\\
+
+
+\end{document}

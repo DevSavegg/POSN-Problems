@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{Calculator}
+
+\section{\texorpdfstring{\textbf{เครื่องคิดเลขอย่างง่าย}}{เครื่องคิดเลขอย่างง่าย}}\label{uxe40uxe04uxe23uxe2duxe07uxe04uxe14uxe40uxe25uxe02uxe2duxe22uxe32uxe07uxe07uxe32uxe22}
+
+ให้เขียนโปรแกรมเพื่อคำนวณค่าของนิพจน์ทางคณิตศาสตร์อย่างง่ายในstring
+sโดยนิพจน์sนี้มีลักษณะดังต่อไปนี้
+
+1.เครื่องหมายดำเนินการ(operator)มีเพียงบวก( + )และลบ (-) เท่านั้น
+
+2.เลขมีเครื่องหมายติดลบได้ แต่ไม่มีการยกกำลัง
+
+3.เลขแต่ละจำนวนในนิพจน์เป็นจำนวนเต็มมีความยาวไม่เกิน5หลัก และติดกัน ไม่มีช่องว่างแทรก
+
+4.อาจมีช่องว่างแทรกหน้าหรือหลังเครื่องหมายดำเนินการ(operator)หรือวงเล็บได้
+
+5.หากวงเล็บไม่ครบคู่ หรือ วงเล็บปิดไม่สัมพันธ์กับวงเล็บเปิดให้แจ้งว่า\textbf{Invalid
+parenthesis}
+
+\subparagraph{\texorpdfstring{\textbf{หมายเหตุสำคัญ}:\textbf{\ul{{ห้าม}}}ใช้คำสั่งหรือฟังก์ชันสำเร็จรูปอย่างeval()หรืออย่างอื่นที่คล้ายกัน}{หมายเหตุสำคัญ:ห้ามใช้คำสั่งหรือฟังก์ชันสำเร็จรูปอย่างeval()หรืออย่างอื่นที่คล้ายกัน}}\label{uxe2buxe21uxe32uxe22uxe40uxe2buxe15uxe2auxe33uxe04uxe0duxe2buxe32uxe21uxe43uxe0auxe04uxe33uxe2auxe07uxe2buxe23uxe2duxe1fuxe07uxe01uxe0auxe19uxe2auxe33uxe40uxe23uxe08uxe23uxe1buxe2duxe22uxe32uxe07evaluxe2buxe23uxe2duxe2duxe22uxe32uxe07uxe2duxe19uxe17uxe04uxe25uxe32uxe22uxe01uxe19}
+
+\hfill\break
+
+\textbf{ข้อกำหนด}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+หัวข้อ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+เงื่อนไข
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+ข้อมูลนําเข้า\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+Standard Input (คีย์บอร์ด)\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+ข้อมูลส่งออก\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+Standard Output (จอภาพ)\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+ระยะเวลาสูงสุดที่ใช้ในการประมวลผล\\
+\strut
+\end{minipage} & 1000 ms \\
+\begin{minipage}[t]{\linewidth}\raggedright
+หน่วยความจําสูงสุดที่ใช้ในการประมวลผล\\
+\strut
+\end{minipage} & 64 MB \\
+คะแนนสูงสุดของโจทย์ & 100 \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลนำเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+บรรทัดที่ 1 & ชุด string ที่มีเฉพาะ ตัวเลข, operator(+, -), วงเล็บ และช่องว่าง \\
+\end{longtable}
+}
+
+
+\subsection*{Output}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลส่งออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+บรรทัดที่ 1 & จำนวนเต็มที่คำนวณได้หนึ่งจำนวนหากไม่สามารถคำนวณได้ให้ตอบ~Invalid
+parenthesis \\
+\end{longtable}
+}
+
+
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{หาเลขใกล้}
+
+กำหนดอาร์เรย์ของเลขจำนวนเต็ม\texttt{nums}และเลขจำนวนเต็มอีกสองค่าคือ\texttt{indexDiff}และ\texttt{valueDiff}ให้หาคู่ดัชนี\texttt{(i,\ j)}โดยที่:
+
+1.\texttt{i\ !=\ j}
+
+2.\texttt{abs(i\ -\ j)\ \textless{}=\ indexDiff}
+
+3.\texttt{abs(nums{[}i{]}\ -\ nums{[}j{]})\ \textless{}=\ valueDiff}
+
+ให้ตอบ\texttt{Y}\ul{หากมี}คู่ดัชนีดังกล่าว และตอบ\texttt{N}หาก\ul{ไม่มี}\\
+
+\ul{\hfill\break
+}
+
+{Example 1:}
+
+\begin{quote}
+\textbf{input:}
+
+4
+
+1 2 3 1
+
+30
+
+\textbf{output:}
+
+Y
+
+\textbf{Explanation:}
+
+สามารถหา\texttt{(i,\ j)\ =\ (0,\ 3)}ที่ทำให้ตรงเงื่อนไขทั้งสามข้อได้พร้อมกัน
+
+1.\texttt{i\ !=\ j\ -\/-\textgreater{}\ 0\ !=\ 3}
+
+2.\texttt{abs(i\ -\ j)\ \textless{}=\ indexDiff\ -\/-\textgreater{}\ abs(0\ -\ 3)\ \textless{}=\ 3}
+
+3.\texttt{abs(nums{[}i{]}\ -\ nums{[}j{]})\ \textless{}=\ valueDiff\ -\/-\textgreater{}\ abs(1\ -\ 1)\ \textless{}=\ 0}
+\end{quote}
+
+{Example 2:}
+
+\begin{quote}
+\textbf{input:}
+
+6
+
+1 5 9 1 5 9
+
+2 3
+
+\textbf{output:}
+
+N
+
+\textbf{Explanation:}
+
+ไม่สามารถหาคู่ดัชนี\texttt{(i,\ j)}ที่ทำให้ตรงเงื่อนไขทั้งสามข้อได้พร้อมกัน
+\end{quote}
+
+
+\subsection*{Input}
+{บรรทัดที่ 1 ขนาดของอาร์เรย์{\texttt{nums}}{0 \textless{} nums \textless{}
+2,000}}\\
+
+บรรทัดที่ 2 ชุดของเลขจำนวนเต็มที่เว้นด้วยช่องว่าง 1 ช่อง ~ ~0 \textless{}
+numsi\textless{} 1,005,000
+
+บรรทัดที่ 3
+เป็นเลขจำนวนเต็มสำหรับ\texttt{indexDiff}และ\texttt{valueDiff}{เว้นด้วยช่องว่าง
+1 ช่อง ~0 \textless{} indexDiff, ValueDiff \textless{} 50}
+
+
+\subsection*{Output}
+อักขระ\texttt{Y}หรือ\texttt{N}\\
+
+
+\end{document}

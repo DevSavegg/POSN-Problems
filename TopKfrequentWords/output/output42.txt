@@ -1,0 +1,11 @@
+apple 26
+about 25
+angry 23
+read 22
+yet 22
+but 21
+jump 21
+fish 19
+for 19
+cat 18
+elephant 18

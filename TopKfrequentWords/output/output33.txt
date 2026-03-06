@@ -1,0 +1,10 @@
+drink 20
+with 20
+happy 19
+well 18
+big 17
+on 17
+horse 16
+in 16
+quickly 16
+bright 15

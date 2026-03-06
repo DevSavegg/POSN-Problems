@@ -1,0 +1,2 @@
+Sum of entered numbers: 189
+Numbers in array: 17 48 42 60 22

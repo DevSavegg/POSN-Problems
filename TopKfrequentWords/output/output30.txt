@@ -1,0 +1,8 @@
+calm 16
+jump 16
+loud 16
+to 16
+cat 15
+hard 15
+horse 15
+in 15

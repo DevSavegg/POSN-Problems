@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เส้นระนาบ}
+
+มีกราฟเส้นตรง (Line chart) ที่ประกอบด้วยจุดN{}จุด เชื่อมต่อกันด้วยส่วนของเส้นตรง
+โจทย์กำหนดอาร์เรย์Yของเลขจำนวนเต็ม (ดัชนีของตัวแรกเท่ากับ1)
+จุดที่Kมีตำแหน่งเป็น(K,Y{[}K{]}) ส่วนของเส้นตรงต่างๆ
+ข้างต้นนั้นไม่มีเส้นแนวนอนนั่นคือไม่มีจุดสองจุดข้างกันที่มีค่าYเท่ากัน
+
+หากเราลากเส้นตรงแนวนอนตัดกลุ่มของจุดเหล่านี้ให้หาจำนวนจุดสูงสุดที่เส้นตรงแนวนอนนี้สามารถตัดผ่านส่วนของเส้นตรงต่างๆ
+ของNจุดนั้น
+
+\hfill\break
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+กราฟ
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+7\\
+1 2 1 2 1 3 2\\
+\strut
+\end{minipage} & 5 & \begin{minipage}[t]{\linewidth}\raggedright
+\hfill\break
+\includegraphics[width=6.82292in,height=2.52083in,alt={image.png}]{/public/upload/31a269c425.png}\\
+\strut \\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+5\\
+2 1 3 4 5\\
+\strut
+\end{minipage} & 2 & \begin{minipage}[t]{\linewidth}\raggedright
+\includegraphics[width=4.01042in,height=3.96875in,alt={image.png}]{/public/upload/abba35d9da.png}\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+\textbf{บรรทัดแรก}จำนวนเต็มหนึ่งค่าNกำหนดจำนวนจุดที่มี โดยที่N{∈}{[}2...500{]}
+
+\textbf{บรรทัดที่สอง}จำนวนเต็มNค่า เป็นค่าY{[}K{]}โดยที่K\textbf{∈}{[}1...N{]}
+
+
+\subsection*{Output}
+จำนวนเต็มแสดงจำนวนจุดตัดสูงสุดที่เส้นตรงแนวนอนสามารถตัดผ่านส่วนของเส้นตรงต่างๆ ได้\\
+
+
+\end{document}

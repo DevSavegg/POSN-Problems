@@ -1,0 +1,13 @@
+high 23
+in 23
+angry 21
+apple 21
+read 21
+so 21
+about 19
+elephant 19
+fast 19
+at 18
+banana 18
+bright 18
+run 18

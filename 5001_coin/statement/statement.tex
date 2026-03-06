@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{แลกเหรียญ}
+
+กำหนดให้อาร์เรย์จำนวนเต็มบวก\texttt{coins}จำนวน\texttt{N}ค่า
+ซึ่งแสดงถึงเหรียญที่มีราคาต่างกัน และจำนวนเต็ม\texttt{amount}แสดงถึงจำนวนเงินทั้งหมด
+ให้ตอบจำนวนเหรียญ\ul{\textbf{น้อยที่สุด}}ที่ต้องใช้เพื่อสร้างจำนวนเงิน\texttt{amount}นั้น
+หากจำนวนเงินนั้นไม่สามารถสร้างขึ้นจากการรวมเหรียญใดๆ ได้ ให้ตอบ -1\\
+
+ทั้งนี้ให้ถือว่ามีจำนวนเหรียญแต่ละประเภทมากมายไม่จำกัด\\
+
+\textbf{\hfill\break
+}
+
+\textbf{ตัวอย่าง}\\
+
+\textbf{\hfill\break
+}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+5 29\\
+1 4 7 9 10\\
+\strut
+\end{minipage} & 3 & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{coins = {[}1 4 7 9 10{]}amount = 29\\
+}29 = 9 + 10 + 10\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+\textbf{บรรทัดที่ 1}เป็นจำนวนเต็ม
+คือค่า\texttt{N}และค่าจำนวนเต็ม\texttt{amount}เว้นด้วยช่องว่าง
+
+\textbf{บรรทัดที่
+2}เป็นชุดเลขจำนวนเต็ม\texttt{N}ค่าสำหรับ\texttt{coins}เว้นด้วยช่องว่าง
+
+
+\subsection*{Output}
+ชุดเลขจำนวนเต็ม 1 ค่าสำหรับคำตอบ คือจำนวนเหรียญน้อยที่สุดที่ต้องใช้\\
+
+
+\end{document}

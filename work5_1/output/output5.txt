@@ -1,0 +1,2 @@
+Sum of entered numbers: 172
+Numbers in array: 56 85 4 11 16

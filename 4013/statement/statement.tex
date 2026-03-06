@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เกมบันไดงู}
+
+กำหนดจำนวนช่องของกระดาน เช่น100ให้หาจำนวนครั้ง{\textbf{\ul{ขั้นต่ำ}}}ที่ต้องเล่น
+(ทอยลูกเต๋า 6 หน้า) เพื่อให้จบเกม โดยกำหนดบันได (ladder) เพื่อก้าวไปข้างหน้า และงู
+(snake) ที่ทำให้ตกถอยหลัง ไว้ในโปรแกรม~
+ทั้งนี้เริ่มต้นการเล่นจะอยู่ช่องที่\texttt{1}และเกมจบเมื่อไปถึงช่องที่\texttt{100}
+
+\includegraphics[width=2.08333in,height=2.08333in,alt={Screenshot 2567-03-28 at 11.34.55.png}]{/public/upload/beb5b8f3d5.png}\\
+
+\textbf{ตัวอย่าง}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+100 8 8\\
+1 38\\
+4 14\\
+9 31\\
+21 42\\
+28 84\\
+51 67\\
+72 91\\
+80 99\\
+17 7\\
+54 34\\
+62 19\\
+64 60\\
+87 36\\
+93 73\\
+95 75\\
+98 79\\
+\strut
+\end{minipage} & 7 & \begin{minipage}[t]{\linewidth}\raggedright
+กระดานมีขนาด 100 ช่อง (10 x 10) มีบันได 8 ชุด และงู 8 ตัว บันไดชุดแรกอยู่ที่ 1
+เพื่อกระโดดไป 38 ทันที ส่วนงูมีอยู่ที่ช่อง\textbf{17 54 62 64 87 93
+95}และ\textbf{98}งูตัวสุดท้ายจะทำให้ตกลงไปที่ช่อง\textbf{79}ทันที\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+100 ~0 0\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+17\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+กระดานมีขนาด 100 ช่อง (10 x 10) ไม่มีบันไดและงูเลย\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+มีจำนวน\texttt{1\ +\ P\ +\ Q}บรรทัด ดังนี้\\
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+บรรทัดที่ 1\\
+\strut
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+จำนวนเต็ม 3 จำนวนคั่นด้วยช่องว่างค่าแรกเป็นจำนวนช่องของเกม N ค่าที่สองเป็นค่า P
+คือจำนวนบันไดและค่าที่สามเป็นค่าQ คือจำนวนงู~ , 0 \textless= P,Q \textless= 5,000
+; 10 \textless= N \textless= 10,000\\
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+\textbf{บรรทัดที่ 2 ถึง 1+P\\
+}\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+บอกบันไดจำนวน\textbf{P}บรรทัด แต่ละบรรทัดเป็นจำนวนเต็ม 2 จำนวน คั่นด้วยช่องว่าง
+ค่าแรกบอกช่องต้นบันได ค่าที่สองบอกช่องปลายบันได โดยที่ช่องปลายบันไดจะมากกว่าช่องต้นบันได
+หากเดินมาตกที่ช่องต้นของบันได ก็จะข้ามไปช่องปลายบันไดทันที ,\textbf{0 \textless=
+Pi\textless{} N}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\textbf{บรรทัดที่ 2+P ถึง 1+P+Q\\
+}\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+บอกงูจำนวน Q บรรทัด แต่ละบรรทัดเป็นจำนวนเต็ม 2 จำนวน คั่นด้วยช่องว่าง\\
+ค่าแรกบอกช่องหัวงู ค่าที่สองบอกช่องหางงู โดยที่ช่องหางงูจะน้อยกว่าช่องหัวงู
+หากเดินตกที่ช่องหัวงู ก็จะตกไปช่องหางงูทันที ,\textbf{0 \textless= Qi\textless{}
+N}\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Output}
+จำนวนครั้ง{ขั้นต่ำ}ที่ต้องเล่น เป็นเลขจำนวนเต็ม\\
+
+
+\end{document}

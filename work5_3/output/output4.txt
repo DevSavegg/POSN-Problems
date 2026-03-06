@@ -1,0 +1,2 @@
+Array after sorting :
+5 5 5 5 5 5 5 5 5 5

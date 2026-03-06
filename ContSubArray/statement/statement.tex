@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เซตย่อยต่อเนื่อง}
+
+กำหนดอาร์เรย์เลขจำนวนเต็ม ( เริ่มต้นตำแหน่งที่ 0 )
+ชื่อว่า\texttt{nums}ให้\textbf{หาจำนวนของเซตย่อยต่อเนื่อง}ของ\texttt{nums}โดย\ul{\textbf{เซตย่อยต่อเนื่องหมายถึงเซตย่อยที่สมาชิกทุกคู่ในนั้นมีค่าต่างกันไม่เกิน
+2}}นั่นคือ
+
+ให้\texttt{i},\texttt{i+1},...,\texttt{j}คือ{index ของเซต
+โดยที่}\texttt{i\ \textless{}=\ i1,\ i2\ \textless{}=\ j},\texttt{0\ \textless{}=\ \textbar{}nums{[}i1{]}\ -\ nums{[}i2{]}\textbar{}\ \textless{}=\ 2}
+
+\hfill\break
+
+\textbf{ตัวอย่างเช่น}
+
+\begin{quote}
+\textbf{Input:}
+
+\textbf{4}
+
+\textbf{5 4 2 4}
+
+\textbf{Output: 8}
+
+\textbf{\ul{คำอธิบาย}}
+
+เซตย่อยต่อเนื่องความยาว 1:\texttt{{[}5{]},\ {[}4{]},\ {[}2{]},\ {[}4{]}}\\
+
+เซตย่อยต่อเนื่องความยาว 2:\texttt{{[}5,\ 4{]},\ {[}4,\ 2{]},\ {[}2,\ 4{]}}\\
+
+เซตย่อยต่อเนื่องความยาว 3:\texttt{{[}4,\ 2,\ 4{]}}\\
+
+เซตย่อยต่อเนื่องความยาว 4:\texttt{ไม่มี}
+
+ดังนั้นจึงตอบ\texttt{4\ +\ 3\ +\ 1\ =\ 8}
+\end{quote}
+
+\textbf{\hfill\break
+}
+
+
+\subsection*{Input}
+{บรรทัดแรกคือขนาดความกว้างของ{อาร์เรย์}}
+
+{บรรทัดที่สองคืออาร์เรย์เลขจำนวนเต็มคั่นด้วยช่องว่าง}\\
+
+
+\subsection*{Output}
+{จำนวนของเซตย่อยต่อเนื่อง}\\
+
+
+\end{document}

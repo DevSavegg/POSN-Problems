@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{ประตูห้องลับ}
+
+มีประตูบานหนึ่งสำหรับเข้าห้องเก็บสมบัติ
+และมีคน\texttt{N}คนที่มีหมายเลขตั้งแต่\texttt{0}ถึง\texttt{N\ -\ 1}แต่ละคนสามารถเข้าหรือออกทางประตูได้หนึ่งครั้ง
+โดยใช้เวลาหนึ่งวินาที\\
+
+คุณจะได้รับ\texttt{arrival}เป็นอาร์เรย์จำนวนเต็มแบบไม่ลดลงขนาด\texttt{N}โดยที่\texttt{arrival{[}i{]}}คือเวลาที่มาถึงประตูของคนที่\texttt{i}และคุณยังได้รับอาร์เรย์\texttt{state}ขนาด\texttt{N}โดยที่\texttt{state{[}i{]}}จะเป็น\texttt{0}หากคนที่\texttt{i}ต้องการเข้าเดินประตู
+หรือ 1 หากเขาต้องการเดินออกประตู หากมีคนตั้งแต่ 2
+คนขึ้นไปต้องการใช้ประตูพร้อมกันให้ปฏิบัติตามกฎต่อไปนี้:\\
+
+\begin{itemize}
+\item
+  หากไม่ได้ใช้ประตูในวินาทีก่อนหน้า ผู้ที่ต้องการออกจะได้ไปก่อน
+\item
+  หากมีการใช้ประตูในการเข้าในวินาทีก่อนหน้า ผู้ที่ต้องการเข้าไปก่อน
+\item
+  หากมีการใช้ประตูเพื่อออกในวินาทีก่อนหน้า ผู้ที่ต้องการออกจะไปก่อน
+\item
+  ถ้าต้องการไปในทิศทางเดียวกันหลายคน ให้คนที่มีดัชนีน้อยที่สุดไปก่อน
+\end{itemize}
+
+ให้ส่งคำตอบ\texttt{answer}เป็นอาร์เรย์ขนาด\texttt{N}โดยที่\texttt{answer{[}i{]}}คือวินาทีที่คนที่\texttt{i}ข้ามประตู
+
+\hfill\break
+
+\textbf{หมายเหตุ:}
+
+\begin{enumerate}
+\item
+  ในแต่ละวินาที ให้มีได้เพียง 1 คนที่ข้ามประตู
+\item
+  แต่ละคนมาถึงประตูจะสามารถรอนิ่งๆ ได้โดยไม่ต้องเข้าหรือออกประตู
+  เพื่อเป็นไปตามกติกาข้างบน
+\end{enumerate}
+
+\textbf{Example}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Input
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Output
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Explanation\\
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+5\\
+0 1 1 2 4\\
+0 1 0 0 1\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+0 3 1 2 4\textbf{\hfill\break
+}\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{arrival = {[}0,1,1,2,4{]}, state = {[}0,1,0,0,1{]}\\
+\strut \\
+}ในแต่ละวินาที เกิดเหตุการณ์ต่อไปนี้:\\
+- ที่ t = 0: คนที่ 0 เป็นเพียงคนเดียวที่ต้องการเข้าไป ดังนั้นเขาจึงเข้าไปทางประตู\\
+- ที่ t = 1: คนที่ 1 ต้องการออก และคนที่ 2 ต้องการเข้า
+เนื่องจากประตูถูกใช้ในวินาทีก่อนหน้าในการเข้า คนที่ 2 จึงเข้าไป (กฎข้อ 2)\\
+- ที่ t = 2: คนที่ 1 ยังคงต้องการออก และคนที่ 3 ต้องการเข้า
+เนื่องจากประตูถูกใช้ในวินาทีก่อนหน้าในการเข้า คนที่ 3 จึงได้เข้าไป (กฎข้อ 3)\\
+- ที่ t = 3: คนที่ 1 เป็นเพียงคนเดียวที่ต้องการออก ดังนั้นเขาจึงออกทางประตู\\
+- ที่ t = 4: คนที่ 4 เป็นเพียงคนเดียวที่ต้องการออก ดังนั้นเขาจึงออกทางประตูเท่านั้น\\
+\strut \\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+0 0 0\\
+1 0 1\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+0 2 1\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{arrival = {[}0,0,0{]}, state = {[}1,0,1{]}\\
+}ในแต่ละวินาที เกิดเหตุการณ์ต่อไปนี้:\\
+- ที่ t = 0: คนที่ 1 ต้องการเข้า และคนที่ 0 และ 2 ต้องการออก
+เนื่องจากประตูไม่ได้ถูกใช้ในวินาทีก่อนหน้า\\
+ดังนั้นคนที่ต้องการออกจะได้ออก (กฎข้อ 1) และเนื่องจาก (กฎข้อ\\
+4) คนที่ 0 มีดัชนีต่ำกว่า 2 ดังนั้นคนที่ 0 จะได้ออกเป็นคนแรก (กฎข้อ 3)\\
+- ที่ t = 1: คนที่ 1 ต้องการเข้า และคนที่ 2 ต้องการออก
+เนื่องจากประตูถูกใช้เพื่อออกในวินาทีก่อนหน้า ดังนั้น 2 จึงได้ออก\\
+- ที่ t = 2: เหลือคนที่ 1 คนเดียว ดังนั้นจึงเข้าประตูไปได้\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+Hints:
+
+1. ใช้ 2 queue เพื่อคนที่ต้องการจะเข้า และคนที่ต้องการจะออก กับเวลา
+
+2. simulate กระบวนการข้างต้นในโจทย์ โดยใช้กฎทั้ง 4 ข้อกับคนที่ต้องการจะเข้าหรือออก
+
+
+\subsection*{Input}
+บรรทัดที่ 1 เป็นเลขจำนวนเต็ม คือค่า\texttt{N}
+
+บรรทัดที่ 2 เป็นชุดเลขจำนวนเต็ม\texttt{N}ค่าสำหรับ\texttt{arrival}เว้นด้วยช่องว่าง
+
+บรรทัดที่ 3 เป็นชุดเลขจำนวนเต็ม\texttt{N}ค่าสำหรับ\texttt{state}เว้นด้วยช่องว่าง
+
+
+\subsection*{Output}
+ชุดเลขจำนวนเต็ม\texttt{N}ค่าสำหรับ\texttt{answer}เว้นด้วยช่องว่าง 1 ช่อง\\
+
+
+\end{document}

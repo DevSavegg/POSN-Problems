@@ -1,0 +1,7 @@
+at 20
+or 17
+by 16
+write 15
+banana 14
+fish 14
+high 14

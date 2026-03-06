@@ -1,0 +1,17 @@
+hard 22
+elephant 19
+horse 19
+cat 18
+for 18
+on 18
+big 17
+quickly 17
+run 17
+about 16
+apple 16
+calm 16
+drink 16
+juice 16
+sad 16
+small 16
+by 15

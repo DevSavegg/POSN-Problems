@@ -1,0 +1,4 @@
+sad 15
+drink 14
+yet 14
+but 13

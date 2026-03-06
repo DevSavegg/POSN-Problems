@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{สำรวจภูเขา}
+
+กำหนดอาร์เรย์\texttt{arr}ของเลขจำนวนเต็มมาให้ ให้สำรวจหาภูเขาจากอาร์เรย์ย่อย
+(subarray) ที่มีเงื่อนไขดังต่อไปนี้
+
+1. ความยาวอาร์เรย์ย่อยไม่น้อยกว่า 3
+
+2. มีดัชนี\texttt{i}(ดัชนีเริ่มต้นจาก 0) โดยที่ 0 \textless{} i \textless{}
+ความยาวอาร์เรย์ -- 1 และ
+
+\texttt{arr{[}0{]}\ \textless{}\ arr{[}1{]}\ \textless{}\ ...\ \textless{}\ arr{[}i\ –\ 1{]}\ \textless{}\ arr{[}i{]}}และ
+
+\texttt{arr{[}i{]}\ \textgreater{}\ arr{[}i\ +\ 1{]}\ \textgreater{}\ ...\ \textgreater{}\ arr{[}arr.length\ –\ 1{]}}
+
+อาร์เรย์ของจำนวนเต็ม ให้หาความยาวของ\ul{\textbf{อาร์เรย์ย่อยภูเขา}}ที่ยาวที่สุด ตอบ 0
+หากไม่มีอาร์เรย์ย่อยภูเขานั้น
+
+\hfill\break
+
+\hfill\break
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+6\\
+2 1 4 3 2 5\\
+\strut
+\end{minipage} & 5 & \begin{minipage}[t]{\linewidth}\raggedright
+4~ -\/-\textgreater~ 1 4 3 2\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+2 2 2\\
+\strut
+\end{minipage} & 0 & \begin{minipage}[t]{\linewidth}\raggedright
+0~ -\/-\textgreater~ No mountain\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+11\\
+6 -2 3 5 7 9 2 0 -2 -1 -5\\
+\strut
+\end{minipage} & 8 & \begin{minipage}[t]{\linewidth}\raggedright
+8~ -\/-\textgreater~ -2 3 5 7 9 2 0 -2\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+14\\
+100 18 45 11 36 56 56 57 72 54 10 57 83 45\\
+\strut
+\end{minipage} & 5 & \begin{minipage}[t]{\linewidth}\raggedright
+5~ -\/-\textgreater~ 56 57 72 54 10 ฐาน (56) ซ้ำ ใช้ได้แค่ตัวเดียว\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+6\\
+3 5 7 7 5 2\\
+\strut
+\end{minipage} & 0 & \begin{minipage}[t]{\linewidth}\raggedright
+0~ -\/-\textgreater~ 7 ซ้ำกันสองตัวไม่ได้เพราะภูเขาต้องยอดแหลม\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดแรก จำนวนเต็ม\texttt{N}เป็นขนาดของอาร์เรย์\texttt{arr}
+
+บรรทัดที่สอง เป็นชุดเลขจำนวนเต็มแทนความสูง ณ แต่ละจุด แต่ละค่าจะเว้นด้วยช่องว่าง
+
+
+\subsection*{Output}
+จำนวนเต็มแทนความยาว\ul{\textbf{สูงสุด}}ของอาร์เรย์ย่อยภูเขา\\
+
+
+\end{document}

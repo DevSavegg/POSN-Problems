@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{ศึกสุดท้าย}
+
+สงครามด่านสุดท้ายสำหรับเหล่านักรบ~heroes~กลุ่มหนึ่งที่กำลังจะต่อสู้กับปีศาจmonstersจำนวนหนึ่ง
+กำหนดอาร์เรย์เลขจำนวนเต็มบวก (เริ่มดัชนีแรกที่1) ให้สองชุด
+ได้แก่\texttt{heroes}เป็นพลังชีวิตของเหล่านักรบnคน
+และ\texttt{monsters}เป็นของปีศาจ\texttt{m}ตัว
+กำหนดว่านักรบคนที่iสามารถปราบปีศาจตัวที่jได้ก็ต่อเมื่อ\texttt{monsters{[}j{]}\textless{}=\ heroes{[}i{]}}
+
+นอกจากนี้คุณยังได้อาร์เรย์เลขจำนวนเต็มบวก~coin(เริ่มดัชนีแรกที่1)
+ความยาวmแทนจำนวนเหรียญ
+นักรบที่ปราบปีศาจตัวที่~k~ได้จะได้รับเหรียญ\texttt{coin{[}k{]}}
+
+ให้ตอบมาเป็นอาร์เรย์ansความยาวnโดยที่\texttt{ans{[}p{]}}เป็นเหรียญสูงสุดที่นักรบคนที่pสามารถสะสมได้ในสงครามครั้งสุดท้ายนี้
+ทั้งนี้...
+
+1.พลังชีวิตของนักรบจะ\ul{ไม่}ลดลงหลังจากปราบปีศาจแต่ละตัว
+
+2.นักรบหลายคนสามารถปราบปีศาจตัวหนึ่งๆได้
+แต่ปีศาจแต่ละตัวจะถูกปราบโดยนักรบแต่ละคนได้เพียงครั้งเดียว
+
+\hfill\break
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+3 5\\
+1 4 2\\
+1 1 5 2 3\\
+2 3 4 5 6\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+5 16 10\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+สำหรับฮีโร่แต่ละคน เราจะแจงดัชนีของเหล่าปีศาจที่เข้าปราบได้:\\
+\strut \\
+ฮีโร่ 1: {[}1,2{]} เนื่องจากพลังของฮีโร่คนนี้คือ 1 เป็น monsters{[}1{]},
+monsters{[}2{]} \textless= 1 ดังนั้นฮีโร่คนนี้จึงสะสมเหรียญได้\\
+coins{[}1{]} + coins{[}2{]} = 5 เหรียญ\\
+\strut \\
+ฮีโร่ 2:\\
+{[}1,2,4,5{]} เนื่องจากพลังของฮีโร่คนนี้คือ 4\\
+และ monsters{[}1{]}, monsters{[}2{]}, monsters{[}4{]}, monsters{[}5{]}
+\textless= 4 ดังนั้นฮีโร่คนนี้จะสะสมเหรียญได้ coins{[}1{]} + coins{[}2{]} +
+coins{[}4{]} + coins{[}5{]} = 16 เหรียญ\\
+\strut \\
+ฮีโร่ 3:\\
+{[}1,2,4{]} เนื่องจากพลังของฮีโร่คนนี้คือ 2 และ monsters{[}1{]},\\
+monsters{[}2{]}, monsters{[}4{]} \textless= 2 ดังนั้นฮีโร่คนนี้สะสมเหรียญได้\\
+coins{[}1{]} + coins{[}2{]} + coins{[}4{]} = 10เหรียญ.\\
+\strut \\
+ดังนั้นคำตอบจะเป็น~ 5 16 10\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+1 4\\
+5\\
+2 3 1 2\\
+10 6 5 2\\
+\strut
+\end{minipage} & 23 & \begin{minipage}[t]{\linewidth}\raggedright
+ฮีโร่คนนี้ปราบปีศาจได้ทั้งหมด เนื่องจาก monsters{[}i{]} \textless= 5
+ดังนั้นจึงสะสมเหรียญได้ทั้งหมด coins{[}1{]} + coins{[}2{]} + coins{[}3{]}
++coins{[}4{]} = 23 และตอบ 23\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดที่1เลขจำนวนเต็มบวก เป็นค่าnและmเว้นด้วยช่องว่าง
+
+บรรทัดที่2ชุดเลขจำนวนเต็มบวกnค่าเป็นพลังชีวิตของเหล่านักรบ เว้นด้วยช่องว่าง
+
+บรรทัดที่3ชุดเลขจำนวนเต็มบวกnค่าเป็นพลังชีวิตของปีศาจ เว้นด้วยช่องว่าง
+
+บรรทัดที่4ชุดเลขจำนวนเต็มบวกmค่าเป็นค่าเหรียญ เว้นด้วยช่องว่าง
+
+
+\subsection*{Output}
+ชุดเลขจำนวนเต็มansความยาวnโดยที่ans{[}p{]}เป็นเหรียญสูงสุดที่นักรบคนที่pสามารถสะสมได้\\
+
+
+\end{document}

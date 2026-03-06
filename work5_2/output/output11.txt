@@ -1,0 +1,2 @@
+Maximum number: 9000
+Minimum number: -10000

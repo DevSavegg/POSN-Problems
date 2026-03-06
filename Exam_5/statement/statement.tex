@@ -1,0 +1,169 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{Critical Path}
+
+\section{\texorpdfstring{\textbf{หา Critical Path}\\
+}{หา Critical Path }}\label{uxe2buxe32-critical-path}
+
+Critical Path(สายงานวิกฤต) หมายถึง ลำดับการทำกิจกรรมของโครงการที่ยาวที่สุดหรือ
+สายงานที่ยาวที่สุด
+หากกิจกรรมบนสายงานวิกฤตมีการเปลี่ยนแปลงเกิดขึ้นจะส่งผลกระทบต่อจำนวนวัน
+และระยะเวลาสิ้นสุดโครงการหนึ่ง เช่นโครงการหนึ่งมีกิจกรรมที่ต้องทำ คือ A...J
+ดังในตารางต่อไปนี้ โดยที่บางกิจกรรมจะต้องทำตามหลังกิจกรรมอื่น เช่นหากจะทำกิจกรรม F
+ได้จะต้องทำ B และ C ให้แล้วเสร็จก่อน โจทย์คือ จากตารางที่ให้
+ให้หา\textbf{จำนวนวันขั้นต่ำที่ต้องใช้ในการทำโครงการนี้ให้แล้วเสร็จ}
+
+\textbf{ข้อกำหนด}จำนวนกิจกรรม อยู่ระหว่าง 5 ถึง 200
+
+ระยะเวลาที่ใช้สำหรับแต่ละกิจกรรม เป็นเลขจำนวนเต็ม ระหว่าง 1 ถึง 100
+
+\textbf{\hfill\break
+}
+
+\textbf{ตัวอย่างข้อมูล}
+
+\textbf{\includegraphics[width=8.33333in,height=3.77083in,alt={image.png}]{/public/upload/400b415b51.png}\\
+}
+
+\textbf{ตัวอย่างข้อมูลเข้า}
+
+จากตัวอย่างตารางข้างบน จะได้ข้อมูลเข้าดังนี้
+
+10~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~// จำนวนกิจกรรมทั้งหมด
+
+2~ 0~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ // กิจกรรมที่ 1 ใช้เวลา 2 วัน กิจกรรมที่ต้องทำก่อนเป็น
+0 เพราะเป็นกิจกรรมแรก
+
+4~ 1~ 1~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~// กิจกรรมที่ 2 ใช้เวลา 4 วัน
+กิจกรรมที่ต้องทำก่อนคือกิจกรรม 1
+
+5~ 1~ 1
+
+4~ 1~ 2
+
+1~ 1~ 2
+
+8~ 2~ 2~ 3~ ~ ~ ~ ~ ~ ~ ~ ~ ~// กิจกรรมที่ 6 ใช้เวลา 8 วัน มีกิจกรรมที่ต้องทำก่อน
+คือ 2 และ 3
+
+3~ 2~ 4~ 5
+
+5~ 1~ 6
+
+4~ 1~ 6
+
+7~ 3~ 7~ 8~ 9
+
+\textbf{ตัวอย่างข้อมูลออก}
+
+27
+
+\textbf{\hfill\break
+}
+
+\textbf{\hfill\break
+}
+
+\textbf{ข้อกำหนด}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+หัวข้อ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+เงื่อนไข
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+ข้อมูลนําเข้า\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+Standard Input (คีย์บอร์ด)\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+ข้อมูลส่งออก\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+Standard Output (จอภาพ)\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+ระยะเวลาสูงสุดที่ใช้ในการประมวลผล\\
+\strut
+\end{minipage} & 1000 ms \\
+\begin{minipage}[t]{\linewidth}\raggedright
+หน่วยความจําสูงสุดที่ใช้ในการประมวลผล\\
+\strut
+\end{minipage} & 64 MB \\
+คะแนนสูงสุดของโจทย์ & 100 \\
+\end{longtable}
+}
+
+\textbf{\hfill\break
+}
+
+
+\subsection*{Input}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลนำเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+บรรทัดที่ 1 & เลขจำนวนเต็ม N = จำนวนกิจกรรมทั้งหมด ในโครงการนี้ \\
+บรรทัดที่ 2 ถึง N+1 & \begin{minipage}[t]{\linewidth}\raggedright
+แต่ละบรรทัด แสดงข้อมูลของแต่ละกิจกรรม ประกอบด้วย\\
+1. ระยะเวลา (วัน) เป็นเลขจำนวนเต็ม\\
+2. จำนวนกิจกรรมที่ต้องทำก่อนกิจกรรมกิจกรรมนี้\\
+3. (หมายเลข) กิจกรรมที่ต้องทำก่อนกิจกรรมนี้ คั่นด้วยช่องว่าง\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Output}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลส่งออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+บรรทัดที่ 1 & \begin{minipage}[t]{\linewidth}\raggedright
+เลขจำนวนเต็มแสดงจำนวนวันขั้นต่ำที่ต้องใช้ในการทำโครงการนี้ให้แล้วเสร็จ\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\end{document}

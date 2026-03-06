@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เลขที่หายไป}
+
+กำหนดอาร์เรย์ของเลขจำนวนเต็ม\texttt{nums}ขนาด\texttt{N}ที่เรียงลำดับเพิ่มขึ้นต่อเนื่องและไม่มีเลขซ้ำ
+และกำหนดจำนวนเต็ม\texttt{K}ให้
+ให้หาเลขที่หายไปตัวที่\texttt{Kth}ในชุดเลข\texttt{nums}นี้ (เริ่มจากซ้ายมือ)\\
+
+\textbf{ตัวอย่าง}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+4 3\\
+4 7 9 10\strut
+\end{minipage} & 8 & 5,6,\textbf{8} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดที่ 1 จำนวนเต็ม\texttt{N}เป็นขนาดของอาร์เรย์
+และตามด้วย~เลขจำนวนเต็ม\texttt{K}เว้นด้วยช่องว่าง
+
+บรรทัดที่ 2{จำนวนเต็ม}\texttt{nums}{ทั้งหมด}\texttt{N}{ตัวเว้นด้วยช่องว่าง}
+
+
+\subsection*{Output}
+{เลขที่หายไปตัวที่}\texttt{Kth}{ในชุดเลข}\texttt{nums}{นี้}\\
+
+
+\end{document}

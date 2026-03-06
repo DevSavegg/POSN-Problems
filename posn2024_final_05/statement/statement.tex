@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เมืองในฝัน}
+
+อาณาจักรในฝันของจักรินมีโครงสร้างเป็นต้นไม้ (Tree) โดยมีเมืองทั้งหมด n เมือง
+แต่ละเมืองมีการตั้งลำดับตั้งแต่ 1 ถึง n โดยเมืองหลวงจะเป็นลำดับที่ 1
+ในอาณาจักรมีถนนที่เดินทางได้สองทิศทางระหว่างเมืองจำนวน n-1 เส้น
+ซึ่งทำให้สามารถเดินทางจากเมืองหนึ่งไปยังเมืองอื่นได้โดยการเดินทางผ่านถนนต่าง ๆ ในต้นไม้
+
+จักรินอยากให้อาณาจักรในฝันเป็นเมืองที่มีความเจริญก้าวหน้า
+และยังคงรักษาสมดุลของแหล่งท่องเที่ยวต่างๆ ตามธรรมชาติ
+จักรินจึงมีนโยบายว่าในอาณาจักรนี้เมืองทุกเมืองสามารถถูกเลือกให้พัฒนาเป็นเมืองเน้นอุตสาหกรรมหรือเมืองเน้นท่องเที่ยวเชิงธรรมชาติ
+จักรินต้องการเลือก k เมืองที่จะพัฒนาเป็นเมืองเน้นอุตสาหกรรม โดยเมืองอื่น ๆ
+จะพัฒนาเป็นเมืองเน้นท่องเที่ยวเชิงธรรมชาติ
+เมืองหลวงเองก็ต้องถูกพัฒนาเป็นเมืองเน้นอุตสาหกรรม
+หรือเมืองเน้นท่องเที่ยวเชิงธรรมชาติอย่างใดอย่างหนึ่งเช่นกัน ทุกปีจะมีการประชุมที่เมืองหลวง
+โดยทุกเมืองที่เน้นอุตสาหกรรมจะต้องส่งทูตไปที่เมืองหลวง
+ทูตจะเดินทางไปยังเมืองหลวงด้วยเส้นทางที่ใกล้ที่สุด,
+โดยค่าความสุขของทูตจะเท่ากับจำนวนเมืองเน้นท่องเที่ยวเชิงธรรมชาติ
+ที่เขาเดินทางผ่านบนเส้นทางมาเมืองหลวง
+
+\ul{งานของคุณ}: ช่วยจักรินเลือกเมืองเน้นอุตสาหกรรมจำนวน k เมือง
+เพื่อให้ผลรวมของความสุขของทูตทั้งหมดมากที่สุด
+
+\hfill\break
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+7 4\\
+1 2\\
+1 3\\
+1 4\\
+3 5\\
+3 6\\
+4 7\\
+\strut
+\end{minipage} & 7 & \begin{minipage}[t]{\linewidth}\raggedright
+ในกรณีนี้ เมือง 1 เป็นเมืองหลวง\\
+(สามารถเลือกเป็นทั้งเมืองอุตสาหกรรมหรือเมืองท่องเที่ยว)\\
+และจักรินต้องเลือก 4 เมืองที่จะเป็นเมืองเน้นอุตสาหกรรม จะได้ตามรูป\\
+\strut \\
+\includegraphics[width=2.11458in,height=1.71875in,alt={image.png}]{/public/upload/d1107ef906.png}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+4 1\\
+1 2\\
+1 3\\
+2 4\\
+\strut
+\end{minipage} & 2 & \begin{minipage}[t]{\linewidth}\raggedright
+จักรินต้องเลือก 1 เมืองเน้นอุตสาหกรรม
+ผลรวมของความสุขของทูตจากเมืองอุตสาหกรรมที่เดินทางไปเมืองหลวงจะเท่ากับ 2\\
+\strut \\
+\includegraphics[width=1.61458in,height=1.64583in,alt={image.png}]{/public/upload/a7c952a7d7.png}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+8 5\\
+7 5\\
+1 7\\
+6 1\\
+3 7\\
+8 3\\
+2 1\\
+4 5\\
+\strut
+\end{minipage} & 9 & \begin{minipage}[t]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดที่ 1: จำนวนเต็ม n และ k (2 ≤ 𝑛 ≤ 2⋅10\^{}5, 1 ≤ 𝑘 \textless 𝑛) แทน
+จำนวนเมืองทั้งหมด และจำนวนเมืองเน้นอุตสาหกรรม ตามลำดับ
+
+บรรทัดที่ 2: เป็นต้นไปจนถึง n-1: จำนวนเต็ม 2 ตัว u และ v (1 ≤ 𝑢, 𝑣 ≤𝑛)
+แทนถนนที่เชื่อมต่อเมือง u และ v
+
+
+\subsection*{Output}
+บรรทัดที่ 1: จำนวนเต็ม 1 ตัว แทนผลรวมของความสุขของทูตทั้งหมดที่มากที่สุด\\
+
+
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เลขคู่}
+
+กำหนดอาร์เรย์จำนวนเต็ม\texttt{nums}(นับตัวแรกเป็นตัวที่ 1) ซึ่งเรียงลำดับแบบไม่ลดลง
+(non-decreasing) ให้ค้นหาตัวเลขสองตัวที่รวมกันได้เป็นเลขเป้าหมายที่ต้องการ
+ให้เลขสองตัวนี้เป็น\texttt{nums{[}index1{]}}และ\texttt{nums{[}index2{]}}โดยที่\texttt{1\ \textless{}=\ index1\ \textless{}\ index2\ \textless{}=\ ขนาดของอาร์เรย์}ให้แสดงผลลัพธ์เป็นดัชนีของเลขสองตัว
+คือ\texttt{index1}และ\texttt{index2}(นับตัวแรกเป็นตัวที่ 1)
+หากไม่พบเลขคู่ใดที่บวกกันเท่ากับเลขเป้าหมายให้ตอบว่า\texttt{-1\ -1}
+
+\textbf{\ul{กำหนดให้}}
+
+\begin{itemize}
+\item
+  \textbf{ข้อมูลเข้าเป็นบรรทัดเดียวขึ้นต้นด้วยเลขเป้าหมายตามด้วยอาร์เรย์จำนวนเต็ม num
+  เว้นด้วยช่องว่าง}
+\item
+  \textbf{ข้อมูลออกเป็นค่าดัชนี index1 index2 หรือ -1 -1
+  หากไม่พบคำตอบสำหรับเลขเป้าหมาย}
+\item
+  \textbf{อาร์เรย์มีขนาดไม่เกิน 300 และแต่ละค่ามีค่าระหว่าง 2 ถึง 600}
+\end{itemize}
+
+
+\subsection*{Input}
+ตัวเลขคั่นด้วยช่องว่าง โดยที่\ul{ตัวแรกเป็นเป้าหมายที่ต้องการ}
+
+\textbf{เช่น}
+
+\texttt{6\ 3}
+
+\texttt{5\ 7\ 9}\strut \\
+
+\begin{itemize}
+\tightlist
+\item
+  เป้าหมายที่ต้องการ คือ 6 ขนาดของ nums คือ 3
+\item
+  5 7 9 คือ nums
+\end{itemize}
+
+
+\subsection*{Output}
+\texttt{index1\ index2}โดยที่{\texttt{index1\ \textless{}\ index2}}
+
+{หากไม่มีคู่ใดเลยให้ตอบ\texttt{-1\ -1}}
+
+
+\end{document}

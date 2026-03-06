@@ -1,0 +1,2 @@
+Sum of entered numbers: 150
+Numbers in array: 10 20 30 40 50

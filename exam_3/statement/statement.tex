@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{หาวันว่าง}
+
+\subsection{\texorpdfstring{\textbf{3.
+หาวันว่าง}}{3. หาวันว่าง}}\label{uxe2buxe32uxe27uxe19uxe27uxe32uxe07}
+
+\paragraph{\texorpdfstring{น้องป๋องเป็นเด็กที่มีอัธยาศัยดีเป็นที่รักของเพื่อน ๆ
+รอบตัวอยู่เสมอ
+วันหนึ่งในวิชาเรียนต๋อยเอนจีเนียร์ริ่งเขาได้รับเลือกเป็นหัวหน้าที่จะต้องคอยมอบหมายงานแก่เพื่อน
+ๆ และคอยนัดประชุมเพื่อนในช่วงวันที่เพื่อน ๆ ในกลุ่มว่างกัน~
+โดยน้องป๋องได้ทำการจับกลุ่มกับเพื่อนที่สนิทใจกลุ่มหนึ่งเป็นจำนวนทั้งหมด\texttt{M}คน
+ซึ่งน้องป๋องมีกำหนดการข้อมูลช่วงวันทำงานต่าง ๆ ของเพื่อนครบถ้วนทุกคนไม่มีตกหล่น
+โดยข้อมูลการทำงานของเพื่อน ๆ น้องป๋องได้มีข้อมูลวันทำงานของแต่ละคน
+ซึ่งจะมีช่วงวันที่ว่างทั้งหมด\texttt{N}ช่วง
+เป็นคู่ลำดับของวันเริ่ม\texttt{(S)}จนถึงวันสิ้นสุด\texttt{(E)}ทั้งหมด\texttt{N}คู่~
+แต่ถึงอย่างนั้นช่วงนี้น้องป๋องได้ไปรับงานเสริมมากมายทำให้ตัวของเขานั้นไม่สามารถจัดการเวลาได้อย่างดีพอที่จะสามารถมีเวลาว่างมานั่งแบ่งช่วงวันที่ต้องใช้ประชุมกับเพื่อน
+ๆ ในกลุ่มนี้ของเขาได้~
+น้องป๋องอยากได้โปรแกรมที่สามารถช่วยแบ่งเบาภาระของเขาโดยขอเพียงแค่การ\ul{หาช่วงวันทุกช่วงที่เพื่อนๆของเขาว่างที่ตรงกันทั้งหมด}ซึ่งข้อมูลกำหนดช่วงวันที่แต่ละคนต้องทำงาน(เป็นวันเริ่มและวันสิ้นสุดของแต่ละช่วง)
+โดยที่ช่วงต่าง ๆ นี้เรียงลำดับตามวันและไม่ซ้อนทับกัน
+ให้หาช่วงวันทุกช่วงที่เพื่อนกลุ่มนี้ทุกคน\ul{ว่าง}หมดและเรียงตามลำดับวันด้วย}{น้องป๋องเป็นเด็กที่มีอัธยาศัยดีเป็นที่รักของเพื่อน ๆ รอบตัวอยู่เสมอ วันหนึ่งในวิชาเรียนต๋อยเอนจีเนียร์ริ่งเขาได้รับเลือกเป็นหัวหน้าที่จะต้องคอยมอบหมายงานแก่เพื่อน ๆ และคอยนัดประชุมเพื่อนในช่วงวันที่เพื่อน ๆ ในกลุ่มว่างกัน~ โดยน้องป๋องได้ทำการจับกลุ่มกับเพื่อนที่สนิทใจกลุ่มหนึ่งเป็นจำนวนทั้งหมดMคน ซึ่งน้องป๋องมีกำหนดการข้อมูลช่วงวันทำงานต่าง ๆ ของเพื่อนครบถ้วนทุกคนไม่มีตกหล่น โดยข้อมูลการทำงานของเพื่อน ๆ น้องป๋องได้มีข้อมูลวันทำงานของแต่ละคน ซึ่งจะมีช่วงวันที่ว่างทั้งหมดNช่วง เป็นคู่ลำดับของวันเริ่ม(S)จนถึงวันสิ้นสุด(E)ทั้งหมดNคู่~ แต่ถึงอย่างนั้นช่วงนี้น้องป๋องได้ไปรับงานเสริมมากมายทำให้ตัวของเขานั้นไม่สามารถจัดการเวลาได้อย่างดีพอที่จะสามารถมีเวลาว่างมานั่งแบ่งช่วงวันที่ต้องใช้ประชุมกับเพื่อน ๆ ในกลุ่มนี้ของเขาได้~ น้องป๋องอยากได้โปรแกรมที่สามารถช่วยแบ่งเบาภาระของเขาโดยขอเพียงแค่การหาช่วงวันทุกช่วงที่เพื่อนๆของเขาว่างที่ตรงกันทั้งหมดซึ่งข้อมูลกำหนดช่วงวันที่แต่ละคนต้องทำงาน(เป็นวันเริ่มและวันสิ้นสุดของแต่ละช่วง) โดยที่ช่วงต่าง ๆ นี้เรียงลำดับตามวันและไม่ซ้อนทับกัน ให้หาช่วงวันทุกช่วงที่เพื่อนกลุ่มนี้ทุกคนว่างหมดและเรียงตามลำดับวันด้วย}}\label{uxe19uxe2duxe07uxe1buxe2duxe07uxe40uxe1buxe19uxe40uxe14uxe01uxe17uxe21uxe2duxe18uxe22uxe32uxe28uxe22uxe14uxe40uxe1buxe19uxe17uxe23uxe01uxe02uxe2duxe07uxe40uxe1euxe2duxe19-uxe46-uxe23uxe2duxe1auxe15uxe27uxe2duxe22uxe40uxe2auxe21uxe2d-uxe27uxe19uxe2buxe19uxe07uxe43uxe19uxe27uxe0auxe32uxe40uxe23uxe22uxe19uxe15uxe2duxe22uxe40uxe2duxe19uxe08uxe40uxe19uxe22uxe23uxe23uxe07uxe40uxe02uxe32uxe44uxe14uxe23uxe1auxe40uxe25uxe2duxe01uxe40uxe1buxe19uxe2buxe27uxe2buxe19uxe32uxe17uxe08uxe30uxe15uxe2duxe07uxe04uxe2duxe22uxe21uxe2duxe1auxe2buxe21uxe32uxe22uxe07uxe32uxe19uxe41uxe01uxe40uxe1euxe2duxe19-uxe46-uxe41uxe25uxe30uxe04uxe2duxe22uxe19uxe14uxe1buxe23uxe30uxe0auxe21uxe40uxe1euxe2duxe19uxe43uxe19uxe0auxe27uxe07uxe27uxe19uxe17uxe40uxe1euxe2duxe19-uxe46-uxe43uxe19uxe01uxe25uxe21uxe27uxe32uxe07uxe01uxe19-uxe42uxe14uxe22uxe19uxe2duxe07uxe1buxe2duxe07uxe44uxe14uxe17uxe33uxe01uxe32uxe23uxe08uxe1auxe01uxe25uxe21uxe01uxe1auxe40uxe1euxe2duxe19uxe17uxe2auxe19uxe17uxe43uxe08uxe01uxe25uxe21uxe2buxe19uxe07uxe40uxe1buxe19uxe08uxe33uxe19uxe27uxe19uxe17uxe07uxe2buxe21uxe14muxe04uxe19-uxe0buxe07uxe19uxe2duxe07uxe1buxe2duxe07uxe21uxe01uxe33uxe2buxe19uxe14uxe01uxe32uxe23uxe02uxe2duxe21uxe25uxe0auxe27uxe07uxe27uxe19uxe17uxe33uxe07uxe32uxe19uxe15uxe32uxe07-uxe46-uxe02uxe2duxe07uxe40uxe1euxe2duxe19uxe04uxe23uxe1auxe16uxe27uxe19uxe17uxe01uxe04uxe19uxe44uxe21uxe21uxe15uxe01uxe2buxe25uxe19-uxe42uxe14uxe22uxe02uxe2duxe21uxe25uxe01uxe32uxe23uxe17uxe33uxe07uxe32uxe19uxe02uxe2duxe07uxe40uxe1euxe2duxe19-uxe46-uxe19uxe2duxe07uxe1buxe2duxe07uxe44uxe14uxe21uxe02uxe2duxe21uxe25uxe27uxe19uxe17uxe33uxe07uxe32uxe19uxe02uxe2duxe07uxe41uxe15uxe25uxe30uxe04uxe19-uxe0buxe07uxe08uxe30uxe21uxe0auxe27uxe07uxe27uxe19uxe17uxe27uxe32uxe07uxe17uxe07uxe2buxe21uxe14nuxe0auxe27uxe07-uxe40uxe1buxe19uxe04uxe25uxe33uxe14uxe1auxe02uxe2duxe07uxe27uxe19uxe40uxe23uxe21suxe08uxe19uxe16uxe07uxe27uxe19uxe2auxe19uxe2auxe14euxe17uxe07uxe2buxe21uxe14nuxe04-uxe41uxe15uxe16uxe07uxe2duxe22uxe32uxe07uxe19uxe19uxe0auxe27uxe07uxe19uxe19uxe2duxe07uxe1buxe2duxe07uxe44uxe14uxe44uxe1buxe23uxe1auxe07uxe32uxe19uxe40uxe2auxe23uxe21uxe21uxe32uxe01uxe21uxe32uxe22uxe17uxe33uxe43uxe2buxe15uxe27uxe02uxe2duxe07uxe40uxe02uxe32uxe19uxe19uxe44uxe21uxe2auxe32uxe21uxe32uxe23uxe16uxe08uxe14uxe01uxe32uxe23uxe40uxe27uxe25uxe32uxe44uxe14uxe2duxe22uxe32uxe07uxe14uxe1euxe2duxe17uxe08uxe30uxe2auxe32uxe21uxe32uxe23uxe16uxe21uxe40uxe27uxe25uxe32uxe27uxe32uxe07uxe21uxe32uxe19uxe07uxe41uxe1auxe07uxe0auxe27uxe07uxe27uxe19uxe17uxe15uxe2duxe07uxe43uxe0auxe1buxe23uxe30uxe0auxe21uxe01uxe1auxe40uxe1euxe2duxe19-uxe46-uxe43uxe19uxe01uxe25uxe21uxe19uxe02uxe2duxe07uxe40uxe02uxe32uxe44uxe14-uxe19uxe2duxe07uxe1buxe2duxe07uxe2duxe22uxe32uxe01uxe44uxe14uxe42uxe1buxe23uxe41uxe01uxe23uxe21uxe17uxe2auxe32uxe21uxe32uxe23uxe16uxe0auxe27uxe22uxe41uxe1auxe07uxe40uxe1auxe32uxe20uxe32uxe23uxe30uxe02uxe2duxe07uxe40uxe02uxe32uxe42uxe14uxe22uxe02uxe2duxe40uxe1euxe22uxe07uxe41uxe04uxe01uxe32uxe23uxe2buxe32uxe0auxe27uxe07uxe27uxe19uxe17uxe01uxe0auxe27uxe07uxe17uxe40uxe1euxe2duxe19uxe46uxe02uxe2duxe07uxe40uxe02uxe32uxe27uxe32uxe07uxe17uxe15uxe23uxe07uxe01uxe19uxe17uxe07uxe2buxe21uxe14uxe0buxe07uxe02uxe2duxe21uxe25uxe01uxe33uxe2buxe19uxe14uxe0auxe27uxe07uxe27uxe19uxe17uxe41uxe15uxe25uxe30uxe04uxe19uxe15uxe2duxe07uxe17uxe33uxe07uxe32uxe19uxe40uxe1buxe19uxe27uxe19uxe40uxe23uxe21uxe41uxe25uxe30uxe27uxe19uxe2auxe19uxe2auxe14uxe02uxe2duxe07uxe41uxe15uxe25uxe30uxe0auxe27uxe07-uxe42uxe14uxe22uxe17uxe0auxe27uxe07uxe15uxe32uxe07-uxe46-uxe19uxe40uxe23uxe22uxe07uxe25uxe33uxe14uxe1auxe15uxe32uxe21uxe27uxe19uxe41uxe25uxe30uxe44uxe21uxe0buxe2duxe19uxe17uxe1auxe01uxe19-uxe43uxe2buxe2buxe32uxe0auxe27uxe07uxe27uxe19uxe17uxe01uxe0auxe27uxe07uxe17uxe40uxe1euxe2duxe19uxe01uxe25uxe21uxe19uxe17uxe01uxe04uxe19uxe27uxe32uxe07uxe2buxe21uxe14uxe41uxe25uxe30uxe40uxe23uxe22uxe07uxe15uxe32uxe21uxe25uxe33uxe14uxe1auxe27uxe19uxe14uxe27uxe22}
+
+\textbf{หมายเหตุ:}
+
+\begin{itemize}
+\tightlist
+\item
+  จะไม่นับช่วงวันว่างที่ความยาวเป็น 0 เช่น 5 5 หรือ 13 13
+\item
+  หากไม่พบช่วงวันที่ทุกคนว่างได้เลยให้ตอบว่า-1 -1
+\end{itemize}
+
+\textbf{ตัวอย่างข้อมูลเข้า:}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+หมายเหตุ
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+2 1 2 5 6\\
+1 1 3\\
+1 4 10\strut
+\end{minipage} & 3 4 & \begin{minipage}[t]{\linewidth}\raggedright
+มี 3 คนคนแรกมีช่วงทำงาน 2 ช่วง คือ {[}1, 2{]} และ {[}5, 6{]}\\
+คนที่ 2 มีช่วงทำงาน 1 ช่วง คือ {[}1, 3{]}\\
+คนที่ 3 มีช่วงทำงาน 1 ช่วง คือ {[}4, 10{]}\\
+พบว่าทั้งสามคนว่างช่วงเวลา {[}3, 4{]}\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+2 1 3 6 7\\
+1 2 4\\
+2 2 5 9 12\strut
+\end{minipage} & 5 6 7 9 & \begin{minipage}[t]{\linewidth}\raggedright
+มี 3 คน คนแรกมีช่วงทำงาน 2 ช่วง คือ {[}1, 3{]} และ {[}6, 7{]}\\
+คนที่ 2 มีช่วงทำงาน 1 ช่วง คือ {[}2, 4{]}\\
+คนที่ 3 มีช่วงทำงาน 2 ช่วง คือ {[}2, 5{]} และ {[}9, 12{]}\\
+พบว่าทั้งสามคนว่างช่วงเวลา {[}5, 6{]} และ {[}7, 9{]}\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลนำเข้า\\
+\strut
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+บรรทัดที่ 1\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+จำนวนเต็มหนึ่งค่า M กำหนดจำนวนสมาชิก ในกลุ่มเพื่อน~ ~1 \textless{} M \textless{}
+500,000\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+บรรทัดที่ 2 ถึง 1+M\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+จำนวนแรกเป็นค่า Ni ซึ่งเป็นจำนวนช่วงเวลาที่ทำงานของเพื่อนคนที่ i\\
+และจำนวนต่อมาจะเป็นคู่ลำดับ Si, Ei (วันเริ่มและวันสิ้นสุด) ของแต่ละช่วงเวลาทำงาน
+เว้นด้วยช่องว่าง 1 ช่อง\\
+1 \textless{} N \textless{} 10,000 ;~ ~1 \textless~ Si, Ei\textless{}
+1,000 ;~ ~ Si \textless{} Ei เสมอ\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+\hfill\break
+
+
+\subsection*{Output}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลส่งออก\\
+\strut
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\hfill\break
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+บรรทัดที่ 1\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+คู่ลำดับของช่วงวันที่ทุกคนว่าง เรียงตามลำดับ เว้นด้วยช่องว่าง\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+\hfill\break
+
+
+\end{document}

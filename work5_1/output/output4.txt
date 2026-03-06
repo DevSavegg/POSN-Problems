@@ -1,0 +1,2 @@
+Sum of entered numbers: 217
+Numbers in array: 92 5 9 20 91

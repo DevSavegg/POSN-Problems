@@ -1,0 +1,10 @@
+badly 21
+about 20
+cat 20
+elephant 20
+hard 20
+on 20
+read 19
+grape 18
+sad 18
+sing 18

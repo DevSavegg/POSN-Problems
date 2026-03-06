@@ -1,0 +1,2 @@
+Maximum number: 20
+Minimum number: 1

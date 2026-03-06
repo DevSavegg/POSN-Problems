@@ -1,0 +1,8 @@
+write 19
+about 18
+fast 16
+happy 16
+low 16
+but 14
+grape 14
+swim 14

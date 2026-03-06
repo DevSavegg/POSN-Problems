@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{ตัดเกรด}
+
+จงเขียนโปรแกรมรับคะแนนของนักเรียน (ค่าระหว่าง 0 ถึง 100)
+แล้วแสดงผลลัพธ์เป็นเกรดตามเกณฑ์ต่อไปนี้:\\
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+ช่วงคะแนน & เกรด \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+มากกว่าหรือเท่ากับ 80 & A \\
+มากกว่าหรือเท่ากับ 70 & B \\
+มากกว่าหรือเท่ากับ 60 & C \\
+มากกว่าหรือเท่ากับ50 & D \\
+นอกเหนือจากนี้ & F \\
+\end{longtable}
+}
+
+และเขียน flowchart
+
+
+\subsection*{Input}
+{บรรทัดที่ 1 รับคะแนนของนักเรียนเป็นจำนวนเต็ม}\\
+
+
+\subsection*{Output}
+{แสดงผลเกรดของนักเรียน}\\
+
+
+\end{document}

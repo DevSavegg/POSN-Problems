@@ -1,0 +1,10 @@
+horse 27
+well 25
+loud 23
+drink 22
+fish 22
+sad 22
+small 22
+write 22
+swim 21
+yet 20

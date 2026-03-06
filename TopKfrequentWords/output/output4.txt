@@ -1,0 +1,7 @@
+grape 7
+sleep 7
+happy 5
+badly 4
+banana 4
+from 4
+read 4

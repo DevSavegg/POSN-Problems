@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{สำรวจห้อง {CT}}
+
+คฤหาสน์ของ ดร.ต๋อยมีห้องอยู่\texttt{N}ห้อง ดร.ต๋อยจัดทัวร์เที่ยวชมทุกห้องในบ้าน
+แต่เพื่อความท้าทาย ดร.ต๋อยจัดให้ทุกห้องปิดล็อคอยู่ จะเข้าได้ต้องมีกุญแจไปไขเปิด
+ยกเว้นเพียงห้องรับแขก (นับเป็นห้องหมายเลข 0) ทั้งนี้ เมื่อเข้าไปในแต่ละห้องจะพบกุญแจ
+(ที่ไม่ซ้ำห้องกัน) แต่บางห้องอาจจะไม่มีก็ได้ กุญแจจะระบุห้องที่เปิดได้ เมื่อคุณเดินเข้าไปห้องหนึ่ง
+คุณสามารถหยิบกุญแจทุกดอกในห้องนั้นไปได้เพื่อนำไปใช้เปิดห้องอื่น
+
+กำหนดอาร์เรย์ของหมายเลขกุญแจแต่ละดอกในห้องนั้นๆ
+ให้\textbf{โจทย์คือท่านสามารถเดินสำรวจได้ครบทุกห้องหรือไม่
+ให้ตอบ}\texttt{true}\textbf{หรือ}\texttt{false}
+
+\hfill\break
+
+{\textbf{ตัวอย่าง}}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+4\\
+1\\
+2\\
+3\\
+-1\\
+\strut \\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+true\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+0 \textgreater{} 1 \textgreater{} 2 \textgreater{} 3\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+5\\
+4 2\\
+4\\
+-1\\
+1 3\\
+4 1\\
+\strut
+\end{minipage} & false & \begin{minipage}[t]{\linewidth}\raggedright
+จาก 0 ไป 2 หรือ 4 ได้\\
+แต่เมื่อไป 2 หรือ 4 แล้ว ยังไงก็หาทางไป 3 ไม่ได้เลย\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+4\\
+1 3\\
+3 0 1\\
+2\\
+0\\
+\strut \\
+\strut
+\end{minipage} & false & \begin{minipage}[t]{\linewidth}\raggedright
+ไม่สามารถเข้าห้อง 2 ได้เนื่องจากกุญแจเข้าห้องอยุ่ในห้อง 2 นั้นเอง\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดแรก จำนวนห้องทั้งหมด\texttt{N};\texttt{(N\ \textless{}=\ 200)}
+
+บรรทัดที่สอง ถึง N + 1 เป็นชุดเลขจำนวนเต็มแทนหมายเลขห้องของกุญแจที่อยู่ในแต่ละห้อง
+บรรทัดที่\texttt{m}คือในห้อง\texttt{m\ –\ 2}แต่ละค่าจะเว้นด้วยช่องว่าง
+(จำนวนกุญแจในแต่ละห้องไม่เกิน N - 2 ดอก) ห้องที่ไม่มีกุญแจเลยจะแสดงเป็นค่า\texttt{-1}
+
+
+\subsection*{Output}
+สามารถเดินสำรวจได้ครบทุกห้องหรือไม่
+ให้ตอบ\texttt{true}\textbf{}หรือ\textbf{}\texttt{false}\\
+
+
+\end{document}

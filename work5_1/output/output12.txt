@@ -1,0 +1,2 @@
+Sum of entered numbers: 313
+Numbers in array: 52 90 88 44 39

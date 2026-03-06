@@ -1,0 +1,10 @@
+or 18
+elephant 16
+grape 16
+low 16
+run 16
+dance 15
+happy 15
+hard 15
+horse 15
+jump 15

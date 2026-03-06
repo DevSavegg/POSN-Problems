@@ -1,0 +1,5 @@
+slowly 18
+fast 16
+for 16
+loud 15
+big 13

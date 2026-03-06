@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เส้นทางสูงต่ำ}
+
+กำหนดพื้นที่เป็นตารางขนาด\texttt{M\ x\ N}ที่ค่าในนั้นเป็นเลขจำนวนเต็ม
+ให้หาเส้นทางที่ทำให้ได้คะแนน\ul{\textbf{สูงสุด}}ในการเดินทางจากตำแหน่ง\texttt{(0,\ 0)}ไปยัง\texttt{(M\ –\ 1,\ N\ –\ 1)}โดยสามารถเดินได้สี่ทางทิศเท่านั้น\textbf{(ทแยงไม่ได้)}ทั้งนี้
+คะแนนของแต่ละเส้นทางคือ\ul{\textbf{ค่าที่ต่ำที่สุด}}บนเส้นทางนั้น เช่น
+คะแนนของเว้นทาง\texttt{8\ →\ 4\ →\ 5\ →\ 9}คือ\texttt{4}\\
+
+\hfill\break
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+3 3\\
+5 4 5\\
+1 2 6\\
+7 4 6\\
+\strut
+\end{minipage} & 4 & \begin{minipage}[t]{\linewidth}\raggedright
+\includegraphics[width=1.25in,height=1.25in,alt={Screenshot 2567-04-01 at 02.20.18.png}]{/public/upload/c2d2565838.png}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+2 6\\
+2 2 1 2 2 2\\
+1 2 2 2 1 2\\
+\strut
+\end{minipage} & 2 &
+\includegraphics[width=2.08333in,height=0.72917in,alt={Screenshot 2567-04-01 at 02.20.42.png}]{/public/upload/cbe665193a.png} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+6 5\\
+3 4 6 3 4\\
+0 2 1 1 7\\
+8 8 3 2 7\\
+3 2 4 9 8\\
+4 1 2 0 0\\
+4 6 5 4 3\\
+\strut
+\end{minipage} & 3 & \begin{minipage}[t]{\linewidth}\raggedright
+\includegraphics[width=1.47917in,height=1.77083in,alt={Screenshot 2567-04-01 at 02.22.07.png}]{/public/upload/79b1e75e43.png}\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดแรก เป็นขนาดพื้นที่\texttt{M,\ N}เป็นจำนวนเต็ม
+ขนาดระหว่าง\texttt{2\ x\ 2}ถึง\texttt{100\ x\ 100}
+
+บรรทัดถัดไป M บรรทัดเป็น ค่าที่ตำแหน่งต่างๆ ของพื้นที่
+โดยมีค่าระหว่าง\texttt{1}ถึง\texttt{99}
+
+
+\subsection*{Output}
+คะแนน\ul{\textbf{สูงสุด}}ในการเดินทาง\\
+
+
+\end{document}

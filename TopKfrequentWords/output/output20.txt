@@ -1,0 +1,8 @@
+fast 12
+soft 12
+elephant 11
+slow 11
+with 11
+cream 10
+dog 10
+for 10

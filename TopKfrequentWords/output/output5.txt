@@ -1,0 +1,6 @@
+big 4
+quickly 4
+sleep 4
+small 4
+yet 4
+and 3

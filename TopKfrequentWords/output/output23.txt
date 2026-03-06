@@ -1,0 +1,7 @@
+badly 16
+small 15
+drink 14
+sing 14
+apple 13
+dog 13
+in 13

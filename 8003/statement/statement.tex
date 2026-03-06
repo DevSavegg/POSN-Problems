@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{กระโดดไกล}
+
+กำหนดอาร์เรย์ที่ดัชนีเริ่มต้นที่\texttt{0}ของจำนวนเต็มจำนวนความยาว\texttt{N}คุณอยู่ในตำแหน่งเริ่มต้นที่\texttt{nums{[}0{]}}แต่ละองค์ประกอบ\texttt{nums{[}i{]}}แสดงถึงความยาวสูงสุดของการข้ามไปข้างหน้าจากดัชนี\texttt{i}กล่าวอีกนัยหนึ่ง
+ถ้าคุณอยู่ที่\texttt{nums{[}i{]}}คุณสามารถข้ามไปที่\texttt{nums{[}i\ +\ j{]}}ใดๆ
+โดยที่\texttt{0\ \textless{}=\ j\ \textless{}=\ nums{[}i{]}}และ\texttt{i\ +\ j\ \textless{}\ N}
+
+ให้ตอบจำนวนขั้นต่ำของการกระโดดถึง\texttt{nums{[}N\ -\ 1{]}}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+5\\
+2 3 1 1 4\\
+\strut
+\end{minipage} & 2 & \begin{minipage}[t]{\linewidth}\raggedright
+กระโดด 1 ก้าวจากดัชนี 0 ไป 1 แล้วกระโดด 3 ก้าวไปถึงดัชนีสุดท้าย\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดแรกจำนวนข้อมูล\texttt{N}โดย\texttt{5\ \textless{}=N\textless{}=\ 100}
+
+บรรทัดที่สองเป็นชุดของเลขจำนวนเต็ม\texttt{num{[}i{]}}จำนวน\texttt{N}ตัว
+โดย\texttt{1\ \textless{}=\ num{[}i{]}\ \textless{}=\ 10}
+
+
+\subsection*{Output}
+จำนวนขั้นต่ำของการกระโดดที่ต้องใช้\\
+
+
+\end{document}

@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{หาวันว่าง}
+
+มีเพื่อนกลุ่มหนึ่งจำนวน M คน ข้อมูลกำหนดช่วงวันที่แต่ละคนต้องทำงาน
+(เป็นวันเริ่มและวันสิ้นสุดของแต่ละช่วง) โดยที่ช่วงต่างๆ นี้เรียงลำดับตามวันและไม่ซ้อนทับกัน
+ให้หาช่วงวันทุกช่วงที่เพื่อนกลุ่มนี้ทุกคนว่างหมดและเรียงตามลำดับวันด้วย
+
+\textbf{หมายเหตุ:}
+
+\begin{enumerate}
+\tightlist
+\item
+  จะไม่นับช่วงวันว่างที่ความยาวเป็น 0 เช่น 5 5 หรือ 13 13
+\item
+  หากไม่พบช่วงวันที่ทุกคนว่างได้เลย ให้ตอบว่า -1 -1
+\end{enumerate}
+
+\textbf{รูปแบบข้อมูลเข้า}
+
+บรรทัดแรก จำนวนเต็มหนึ่งค่า M กำหนดจำนวนสมาชิกในกลุ่มเพื่อน M Î {[}2...50{]}
+
+บรรทัดที่ 2 ถึง 2 + M จำนวนเต็มเป็นค่า N{[}i{]} โดยที่ i Î {[} 1... M {]}.
+N{[}i{]} คือจำนวนช่วงทำงานของเพื่อนคนที่ i แล้วตามด้วยคู่ลำดับ (วันเริ่มและวันสิ้นสุด)
+ของแต่ละช่วงวันทำงาน เว้นด้วยช่องว่าง 1 ช่อง
+
+\textbf{รูปแบบข้อมูลออก}
+
+คู่ลำดับของช่วงวันที่ทุกคนว่าง เรียงตามลำดับ เว้นด้วยช่วงว่าง
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+Input
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Output
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+2 1 2 5 6\\
+1 1 3\\
+1 4 10\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+3 4\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+มี 3 คน คนแรกมีช่วงทำงาน 2 ช่วง คือ {[}1, 2{]} และ {[}5, 6{]}\\
+คนที่ 2 มีช่วงทำงาน 1 ช่วง คือ {[}1, 3{]}\\
+คนที่ 3 มีช่วงทำงาน 1 ช่วง คือ {[}4, 10{]}\\
+พบว่าทั้งสามคนว่างช่วงเวลา {[}3, 4{]}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+2 1 3 6 7\\
+1 2 4\\
+2 2 5 9 12\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+5 6 7 9\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+มี 3 คน คนแรกมีช่วงทำงาน 2 ช่วง คือ {[}1, 3{]} และ {[}6, 7{]}\\
+คนที่ 2 มีช่วงทำงาน 1 ช่วง คือ {[}2, 4{]}\\
+คนที่ 3 มีช่วงทำงาน 2 ช่วง คือ {[}2, 5{]} และ {[}9, 12{]}\\
+พบว่าทั้งสามคนว่างช่วงเวลา {[}5, 6{]} และ {[}7, 9{]}\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+\textbf{ข้อจำกัด}
+
+จำนวนเพื่อนในกลุ่ม M ไม่เกิน 50
+
+
+\subsection*{Input}
+บรรทัดแรก จำนวนเต็มหนึ่งค่า M กำหนดจำนวนสมาชิกในกลุ่มเพื่อน M Î {[}2...50{]}
+
+บรรทัดที่ 2 ถึง 2 + M จำนวนเต็มเป็นค่า N{[}i{]} โดยที่ i Î {[} 1... M {]}.
+N{[}i{]} คือจำนวนช่วงทำงานของเพื่อนคนที่ i แล้วตามด้วยคู่ลำดับ (วันเริ่มและวันสิ้นสุด)
+ของแต่ละช่วงวันทำงาน เว้นด้วยช่องว่าง 1 ช่อง
+
+
+\subsection*{Output}
+{คู่ลำดับของช่วงวันที่ทุกคนว่าง เรียงตามลำดับ เว้นด้วยช่วงว่าง}\\
+
+
+\end{document}

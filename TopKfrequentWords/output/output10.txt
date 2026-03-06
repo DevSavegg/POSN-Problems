@@ -1,0 +1,7 @@
+small 8
+with 8
+badly 7
+in 7
+to 7
+dog 6
+loud 6

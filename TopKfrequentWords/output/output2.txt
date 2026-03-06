@@ -1,0 +1,8 @@
+banana 3
+to 3
+but 2
+by 2
+calm 2
+cat 2
+fish 2
+low 2

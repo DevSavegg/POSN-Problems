@@ -1,0 +1,1 @@
+lower and upper: All prime number between 2 to 2 are: 2

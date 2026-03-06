@@ -1,0 +1,4 @@
+Odd numbers: 99 47 69 37 13 95 9 65 45 9 7 9 73 
+Count of odd: 13
+Even numbers: 82 74 50 72 14 52 58 18 22 82 6 
+Count of even: 11

@@ -1,0 +1,13 @@
+Average grades for each student:
+Student 1: B
+Student 2: B
+Student 3: D
+Student 4: A
+Student 5: B
+Highest grades for each subject:
+Subject 1: Student 4 with 90
+Subject 2: Student 4 with 93
+Subject 3: Student 4 with 95
+Subject 4: Student 1 with 92
+Subject 5: Student 4 with 92
+Subject 6: Student 2 with 91

@@ -1,0 +1,1 @@
+lower and upper: All prime number between 90 to 100 are: 97

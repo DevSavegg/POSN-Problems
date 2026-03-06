@@ -1,0 +1,2 @@
+Sum of entered numbers: 249
+Numbers in array: 57 73 18 93 8

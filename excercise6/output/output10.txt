@@ -1,0 +1,1 @@
+lower and upper: All prime number between 17 to 17 are: 17

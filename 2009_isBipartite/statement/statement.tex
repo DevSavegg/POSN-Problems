@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{กราฟสองส่วน}
+
+มีกราฟไม่มีทิศทางขนาด\texttt{N}โหนดอยู่ชุดหนึ่ง
+โดยที่โหนดเรียงหมายเลขตั้ง\texttt{0}ถึง\texttt{N\ –\ 1}กำหนดข้อมูลเข้าเป็นจำนวน\texttt{N}บรรทัด
+แต่ละบรรทัดแสดงถึงเลขโหนดที่โหนด\texttt{i}เชื่อมต่อไปถึง
+หากโหนด\texttt{N}ไม่มีการเชื่อมต่อใด ๆ จะแสดงเป็นเครื่องหมายลบ ( - )
+กราฟนี้มีคุณสมบัติดังนี้
+
+\begin{enumerate}
+\item
+  ไม่มี self-edges คือ edge ที่วิ่งเข้าหาตัวเอง
+\item
+  ไม่มี duplicate edge คือ มีมากกว่า 1 edge ที่ต่อไปยังโหนดอื่นใดๆ
+\item
+  เป็นชนิดไม่มีทิศทาง
+\end{enumerate}
+
+\textbf{{\hfill\break
+}}
+
+{\textbf{ให้หาว่ากราฟที่กำหนดให้เป็นกราฟสองส่วน ( Bipartite ) หรือไม่ ให้ตอบว่า
+true หรือ false}}
+
+
+\subsection*{Input}
+บรรทัดแรก : เป็นจำนวนโหนด\texttt{N}และ จำนวนเส้นเชื่อม\texttt{E}คั่นด้วยช่องว่าง
+
+\texttt{E}บรรทัดต่อมา : เป็นเลขของโหนดที่เชื่อมกัน 2 โหนด คั่นด้วยช่องว่าง
+
+
+\subsection*{Output}
+{กราฟที่กำหนดให้เป็นกราฟสองส่วน ( Bipartite ) หรือไม่
+ให้ตอบว่า\texttt{true}หรือ\texttt{false}}\\
+
+
+\end{document}

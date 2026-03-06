@@ -1,0 +1,7 @@
+horse 14
+badly 11
+dance 10
+elephant 10
+quickly 10
+sing 10
+sleep 10

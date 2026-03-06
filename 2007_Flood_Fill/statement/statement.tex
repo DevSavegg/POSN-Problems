@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{Flood Fill}
+
+กำหนดหน้าจอ 2 มิติ ขนาดไม่เกิน (กว้าง x ยาวหรือสูง)\texttt{200\ x\ 100}จุด
+(Pixel) พิกัดมุมบนซ้ายสุดเป็น\texttt{(0,\ 0)}กำหนดค่าสีของแต่ละ Pixel
+เป็นเลขจำนวนเต็มตั้งแต่ 0 ขึ้นไปแต่ไม่เกิน 4 สิ่งที่ต้องการให้ทำคือ การเทสีหรือแทน ณ
+จุดที่กำหนด\texttt{(x,\ y)}รวมถึงจุดที่อยู่ข้างกันทั้งสี่ทิศ (ไม่นับแนวทแยงมุม)
+และสีเดียวกัน\ul{\textbf{ต่อเนื่อง}}ไปทั้งหมด ด้วยค่าสีใหม่ที่กำหนดคือสี\texttt{8}
+
+\hfill\break
+
+\textbf{ตัวอย่าง}
+
+\textbf{Input:}
+
+\texttt{8\ 8\ 3}{}{\texttt{//}}{\texttt{บอกขนาดหน้าจอที่ต้องการ\ 8\ x\ 8\ มีสามสี\ 0,\ 1,\ 2}}{}
+
+\texttt{7\ 3}{\texttt{//}}{\texttt{บอกว่าเทสี\ 8\ ลงไปที่ตำแหน่ง\ (row,\ col)\ =\ (7,\ 3)}}\strut \\
+
+\texttt{1\ 1\ 1\ 1\ 1\ 1\ 1\ 1}
+
+\texttt{1\ 1\ 1\ 1\ 1\ 1\ 0\ 0}
+
+\texttt{1\ 0\ 0\ 1\ 1\ 0\ 1\ 1}
+
+\texttt{1\ 2\ 2\ 2\ 2\ 0\ 1\ 0}
+
+\texttt{1\ 1\ 1\ 2\ 2\ 0\ 1\ 0}
+
+\texttt{1\ 1\ 1\ 2\ 2\ 2\ 2\ 0}
+
+\texttt{1\ 1\ 1\ 1\ 1\ 2\ 1\ 1}
+
+\texttt{1\ 1\ 1}{\texttt{1}}\texttt{1\ 2\ 2\ 1}\strut \\
+
+\textbf{Output:}
+
+\textbf{\texttt{8\ 8\ 8\ 8\ 8\ 8\ 8\ 8}}
+
+\textbf{\texttt{8\ 8\ 8\ 8\ 8\ 8}}\texttt{0\ 0}
+
+\textbf{\texttt{8}}\texttt{0\ 0}\textbf{\texttt{8\ 8}}\texttt{0\ 1\ 1}
+
+\textbf{\texttt{8}}\texttt{2\ 2\ 2\ 2\ 0\ 1\ 0}
+
+\textbf{\texttt{8\ 8\ 8}}\texttt{2\ 2\ 0\ 1\ 0}
+
+\textbf{\texttt{8\ 8\ 8}}\texttt{2\ 2\ 2\ 2\ 0}
+
+\textbf{\texttt{8\ 8\ 8\ 8\ 8}}\texttt{2\ 1\ 1}
+
+\textbf{\texttt{8\ 8\ 8}}{\textbf{\texttt{8}}{\textbf{\texttt{8}}\texttt{2\ 2\ 1}}}
+
+
+\subsection*{Input}
+ข้อมูลเข้าบรรทัดที่ 1
+เป็นขนาดของหน้าจอ\texttt{(x,\ y)}ตามด้วยจำนวนสีที่มีในตอนเริ่มต้น\texttt{(M)}
+
+ข้อมูลเข้าบรรทัดที่ 2 เป็นตำแหน่งที่เทสี\texttt{8}ลงไปที่พิกัด\texttt{(p,q)}\\
+
+ข้อมูล{เข้า}บรรทัดที่ 3
+ถึง\texttt{y\ +\ 2}เป็นตารางของเลขจำนวนเต็มแสดงค่าสี\texttt{0}ถึง\texttt{M\ –\ 1}
+
+\hfill\break
+
+กำหนดให้\texttt{0\ \textless{}=\ x},\texttt{p\ \textless{}\ 200},\texttt{0\ \textless{}=\ y},\texttt{q\ \textless{}\ 100},\texttt{0\ \textless{}=\ M\ \textless{}=\ 4}\\
+
+
+\subsection*{Output}
+ตารางใหม่หลังจากทำการเทสีลงไปแล้ว ดังตัวอย่างข้างต้น
+
+
+\end{document}

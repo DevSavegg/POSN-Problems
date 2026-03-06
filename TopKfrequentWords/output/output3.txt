@@ -1,0 +1,6 @@
+soft 4
+write 4
+but 3
+dog 3
+grape 3
+on 3

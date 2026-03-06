@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{ตัดคำ}
+
+กำหนดอาร์เรย์ของข้อความ (สตริง) และความกว้างWMAXให้จัดรูปแบบข้อความให้แต่ละบรรทัดมี
+
+อักขระจำนวนเท่ากับWMAXพอดีและจัดเต็มชิดขอบทั้งซ้ายและขวา
+บรรจุคำให้ได้มากที่สุดเท่าที่จะเป็นไปได้ในแต่ละบรรทัด
+เติมช่องว่างเมื่อจำเป็นเพื่อให้แต่ละบรรทัดมีอักขระWMAXพอดี ทั้งนี้
+
+1. ควรกระจายช่องว่างที่เพิ่มระหว่างคำให้เท่าๆ กันที่สุดเท่าที่จะเป็นไปได้
+หากจำนวนช่องว่างไม่เท่ากัน ให้ช่องว่างในช่องทางด้านซ้ายมากกว่าช่องทางด้านขวา
+
+2. บรรทัดสุดท้ายให้จัดชิดซ้าย
+
+3. เวลาตอบ ให้ล้อมแต่ละบรรทัดด้วย\textbf{{[}}และ\textbf{{]}}ด้วยเพื่อความชัดเจน
+
+\subsubsection{\texorpdfstring{{Input}}{Input}}\label{input}
+
+บรรทัดแรก: จำนวนเต็มหนึ่งค่าWMAXโดยที่ WMAX Î {[}12...100{]}
+
+บรรทัดที่ 2: ข้อความ จำนวนคำระหว่าง 1 ถึง 2000 คำ เว้นคำด้วยหนึ่งช่องว่าง
+
+\subsubsection{\texorpdfstring{{Output}}{Output}}\label{output}
+
+ข้อความหลังการตัดคำ โดยแต่ละบรรทัดจะล้อมหน้าหลังด้วย\textbf{{[}}และ\textbf{{]}}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลนำเข้า\\
+\strut
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลส่งออก\\
+\strut
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+14\\
+Easy come, easy go.\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+{[}Easy come,{]}\\
+{[}easy go. {]}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+30\\
+You can\textquotesingle t judge a book by its cover.\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+{[}You can\textquotesingle t judge a book by its{]}\\
+{[}cover. {]}\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+14\\
+People who live in glass houses should\\
+not throw stones\\
+\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+{[}People who{]}\\
+{[}live in glass{]}\\
+{[}houses should{]}\\
+{[}not throw{]}\\
+{[}stones {]}\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดแรก: จำนวนเต็มหนึ่งค่าWMAXโดยที่ WMAX Î {[}12...100{]}
+
+บรรทัดที่ 2: ข้อความ จำนวนคำระหว่าง 1 ถึง 2000 คำ เว้นคำด้วยหนึ่งช่องว่าง
+
+
+\subsection*{Output}
+{ข้อความหลังการตัดคำ โดยแต่ละบรรทัดจะล้อมหน้าหลังด้วย}{{[}}{และ}{{]}}\\
+
+
+\end{document}

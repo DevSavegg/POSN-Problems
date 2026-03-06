@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{ก่อนสตริงจะว่างเปล่า}
+
+กำหนด\texttt{string\ s}
+
+พิจารณาการดำเนินการต่อไปนี้จนกว่า\texttt{s}จะกลายเป็น empty string
+
+สำหรับทุกอักขระตั้งแต่\texttt{\textquotesingle{}a\textquotesingle{}}ถึง\texttt{\textquotesingle{}z\textquotesingle{}}(เฉพาะตัวพิมพ์เล็ก)ให้ลบอักขระตัวแรกใน\texttt{s}ออก
+(ถ้ามี)
+
+\hfill\break
+
+ตัวอย่าง
+
+ให้s =\texttt{"aabcbbca"}ขั้นตอนการดำเนินการจะเป็นดังต่อไปนี้:
+
+ลบอักขระที่ขีดเส้นใต้s
+=\texttt{"}\ul{\mbox{\texttt{a}}}\texttt{a}\ul{\mbox{\texttt{bc}}}\texttt{bbca"}ผลลัพธ์คือs
+=\texttt{"abbca"}
+
+ลบอักขระที่ขีดเส้นใต้s
+=\texttt{"}\ul{\mbox{\texttt{ab}}}\texttt{b}\ul{\mbox{\texttt{c}}}\texttt{a"}ผลลัพธ์คือs
+=\texttt{"ba"}
+
+ลบอักขระที่ขีดเส้นใต้s =\texttt{"ba"}ผลลัพธ์คือs =\texttt{""}
+
+คำตอบคือค่าของสตริง\texttt{s}ก่อนที่จะใช้การดำเนินการครั้งสุดท้าย ในตัวอย่างข้างต้น
+คำตอบคือ\texttt{"ba"}
+
+
+\subsection*{Input}
+สตริงอักษระยาวต่อกัน
+
+
+\subsection*{Output}
+ผลลัพธ์ครั้งสุดท้ายก่อนเป็น empty string
+
+
+\end{document}

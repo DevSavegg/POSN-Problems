@@ -1,0 +1,2 @@
+Sum of entered numbers: 216
+Numbers in array: 75 41 9 12 79

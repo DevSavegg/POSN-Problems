@@ -1,0 +1,2 @@
+lower and upper: All prime number between 10 to 20 are: 11 13 17 19 
+

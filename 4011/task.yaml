@@ -1,0 +1,9 @@
+name: "4011"
+title: "อนุกรมเลขคณิต"
+time_limit: 0.1
+memory_limit: 32
+n_input: 50
+public_testcases: 0, 1, 2, 3, 4
+infile: ""
+outfile: ""
+token_mode: infinite

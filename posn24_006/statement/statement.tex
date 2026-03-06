@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{นักตกปลากับแหล่งน้ำปริศนา}
+
+ธีรภพได้รับแผนที่พื้นที่แห่งหนึ่งในรูปแบบของ ตารางขนาดm x n
+(matrix)โดยในแต่ละช่องของตารางจะมีค่าเป็นเลขจำนวนเต็มgrid{[}r{]}{[}c{]}ซึ่งหมายถึง:\\
+
+\begin{itemize}
+\tightlist
+\item
+  ถ้าgrid{[}r{]}{[}c{]} == 0ช่องนั้นคือ พื้นดิน ไม่สามารถตกปลาได้
+\item
+  ถ้าgrid{[}r{]}{[}c{]} \textgreater{} 0ช่องนั้นคือ แหล่งน้ำ
+  ที่มีปลาจำนวนgrid{[}r{]}{[}c{]}ตัว
+\end{itemize}
+
+\section{\texorpdfstring{\textbf{กฎของเกม:}}{กฎของเกม:}}\label{uxe01uxe0euxe02uxe2duxe07uxe40uxe01uxe21}
+
+ธีรภพสามารถเริ่มต้นที่ จุดใดก็ได้ ที่เป็นแหล่งน้ำ แล้วทำสิ่งต่อไปนี้ได้ไม่จำกัดจำนวนครั้ง:
+
+1.ตกปลาทั้งหมด ที่อยู่ในช่องปัจจุบัน (ปลาหมดแล้วจะเป็นแหล่งน้ำว่างเปล่า)
+
+2.ย้ายไปช่องใกล้เคียง ที่เป็นแหล่งน้ำ (ห้ามเดินลงดิน)
+
+โดย ช่องใกล้เคียง (adjacent)คือช่องที่อยู่:
+
+\begin{itemize}
+\tightlist
+\item
+  ขวา(r, c + 1)
+\item
+  ซ้าย(r, c - 1)
+\item
+  ล่าง(r + 1, c)
+\item
+  บน(r - 1, c)
+\end{itemize}
+
+\subsection{\texorpdfstring{\textbf{เป้าหมายของคุณ:}}{เป้าหมายของคุณ:}}\label{uxe40uxe1buxe32uxe2buxe21uxe32uxe22uxe02uxe2duxe07uxe04uxe13}
+
+จงหาว่า ธีรภพสามารถตกปลาได้มากที่สุดกี่ตัว หากเขาเลือกจุดเริ่มต้นได้อย่างดีที่สุด\\
+หากไม่มีแหล่งน้ำเลย ให้ตอบ0
+
+\subsection{\texorpdfstring{\textbf{ข้อจำกัด:}}{ข้อจำกัด:}}\label{uxe02uxe2duxe08uxe33uxe01uxe14}
+
+\begin{itemize}
+\tightlist
+\item
+  ขนาดของแผนที่:1 \textless= m, n \textless= 10
+\item
+  จำนวนปลาสูงสุดในแต่ละช่อง:0 \textless= grid{[}i{]}{[}j{]} \textless= 10
+\end{itemize}
+
+\paragraph{\texorpdfstring{\textbf{ตัวอย่างที่1:}}{ตัวอย่างที่1:}}\label{uxe15uxe27uxe2duxe22uxe32uxe07uxe171}
+
+\textbf{Input:}
+
+\textbf{\includegraphics[width=1.55208in,height=1.0625in,alt={image.png}]{/public/upload/ca5b7d4622.png}\\
+}
+
+grid = {[}{[}0,2,1,0{]},
+
+{[}4,0,0,3{]},
+
+{[}1,0,0,4{]},
+
+{[}0,3,2,0{]}{]}
+
+\textbf{Output:}7\\
+อธิบาย: เริ่มที่(1,3)ได้3ตัว เดินลงมาที่(2,3)ได้อีก4ตัว รวม7ตัว
+
+\hfill\break
+
+\paragraph{\texorpdfstring{\textbf{ตัวอย่างที่2:}}{ตัวอย่างที่2:}}\label{uxe15uxe27uxe2duxe22uxe32uxe07uxe172}
+
+\textbf{Input:}
+
+grid = {[}{[}1,0,0,0{]},
+
+{[}0,0,0,0{]},
+
+{[}0,0,0,0{]},
+
+{[}0,0,0,1{]}{]}
+
+\textbf{Output:}\texttt{1}\\
+อธิบาย: จุดที่มีปลาอยู่คือ\texttt{(0,0)}และ\texttt{(3,3)}ซึ่งต่างคนต่างอยู่
+ไม่สามารถเดินไปที่อื่นได้
+
+
+\subsection*{Input}
+บรรทัดที่1 : ขนาดของ m และ n คั่นด้วยช่องว่าง
+
+บรรทัดที่ 2 - m+1 : ตัวเลขในช่องตารางจำนวน n คั่นด้วยช่องว่าง
+
+
+\subsection*{Output}
+บรรทัดที่ 1 : จำนวนปลาทีตกได้สูงสุด~หากเขาเลือกจุดเริ่มต้นได้อย่างดีที่สุด
+(หากไม่มีแหล่งน้ำเลย ให้ตอบ0 )
+
+
+\end{document}

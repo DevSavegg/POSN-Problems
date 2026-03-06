@@ -1,0 +1,1 @@
+lower and upper: All prime number between 80 to 100 are: 83 89 97

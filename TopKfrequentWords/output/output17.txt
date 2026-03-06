@@ -1,0 +1,8 @@
+small 14
+high 12
+jump 12
+but 11
+in 11
+quickly 10
+angry 9
+by 9

@@ -1,0 +1,9 @@
+name: "a_b"
+title: "A+B=?"
+time_limit: 1
+memory_limit: 256
+n_input: 2
+public_testcases: 0, 1
+infile: ""
+outfile: ""
+token_mode: infinite

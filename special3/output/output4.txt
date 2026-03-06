@@ -1,0 +1,2 @@
+Input array elements :
+Value 77 Frequency 10 time(s)

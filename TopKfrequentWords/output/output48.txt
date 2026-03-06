@@ -1,0 +1,17 @@
+drink 30
+apple 26
+big 25
+jump 24
+well 24
+calm 23
+eat 22
+for 22
+happy 22
+of 22
+on 22
+sad 22
+bright 21
+horse 21
+quiet 21
+slowly 21
+write 21

@@ -1,0 +1,4 @@
+Odd numbers: 81 57 
+Count of odd: 2
+Even numbers: 32 -4 -8 
+Count of even: 3

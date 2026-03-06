@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{ห้องประชุม}
+
+ศูนย์ประชุมใหญ่แห่งหนึ่งกำลังจัดห้องเตรียมห้องประชุมสำหรับงานประชุมจำนวนมากที่จองเข้ามาใช้ห้อง
+โดยมีข้อมูลช่วงเวลาจัดงานกำหนดเป็นคู่ลำดับของวันที่เริ่มและวันที่สุดท้าย
+กำหนดให้เป็นอาร์เรย์ของคู่ลำดับจำนวนเต็ม\texttt{intervals}โดยแต่ละ\texttt{intervals{[}i{]}\ =\ {[}start}\textbf{\texttt{i}}\texttt{,\ end}\textbf{\texttt{i}}\texttt{{]}}ให้หาว่าจะจากข้อมูลที่ให้ไปนี้
+จะต้องจองห้องประชุมขั้นต่ำกี่ห้องถึงจะเพียงพอ\\
+
+\hfill\break
+
+\textbf{ตัวอย่าง}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+3\\
+0 30\\
+5 10\\
+15 20\\
+\strut
+\end{minipage} & 2 & \begin{minipage}[t]{\linewidth}\raggedright
+เวลาของ\textbf{(5,10)}และ\textbf{(15,20)}ไม่ซ้อนกัน\\
+\strut \\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+2\\
+7 10\\
+2 4\\
+\strut
+\end{minipage} & 1 & \begin{minipage}[t]{\linewidth}\raggedright
+เวลาของทั้ง 2 การประชุมไม่ทับซ้อนกัน\\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดที่ 1 เป็นจำนวนเต็ม คือจำนวนของคู่ลำดับ\texttt{intervals{[}i{]}}\\
+
+บรรทัดที่ 2เป็นชุดเลขจำนวนเต็ม\texttt{N}คู่
+ของ\texttt{start}\textbf{\texttt{i}}และ\texttt{end}\textbf{\texttt{i}}เรียงลำดับต่อเนื่อง
+เว้นด้วยช่องว่าง\\
+
+
+\subsection*{Output}
+เลขจำนวนเต็ม คือจำนวนห้องขั้นต่ำที่ต้องใช้\\
+
+
+\end{document}

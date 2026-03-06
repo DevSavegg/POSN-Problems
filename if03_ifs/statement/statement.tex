@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{grow a garden}
+
+{สตอร์วเบอร์รี่}จงเขียนโปรแกรมรับค่า อุณหภูมิ (องศาเซลเซียส)~
+แล้วให้ระบบแนะนำว่าเหมาะสำหรับปลูกพืชชนิดใด ตามตารางเงื่อนไขด้านล่าง
+
+โดยจะให้
+
+{สตรอว์เบอร์รี = 1}\\
+
+ผักกาด = 2
+
+ข้าวโพด = 3
+
+ไม่เหมาะกับการปลูกพืช = 0
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\centering\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+อุณหภูมิ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+พืชที่เหมาะสม
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+15-25 & สตอร์วเบอร์รี่ \\
+\begin{minipage}[t]{\linewidth}\centering
+26-34\\
+\strut
+\end{minipage} & ผักกาด \\
+35-45 & ข้าวโพด \\
+นอกเหนือจากด้านบน & ไม่เหมาะสมกับการปลูก \\
+\end{longtable}
+}
+
+\hfill\break
+
+พร้อมกับเขียน Flowchart
+
+
+\subsection*{Input}
+บรรทัดที่ 1 รับอุณหภูมิ(°C) เป็นจำนวนเต็ม
+
+
+\subsection*{Output}
+แสดงผลลัพธ์พืชที่เหมาะสมกับการปลูก
+
+โดยให้แทนค่าดังนี้
+
+{สตรอว์เบอร์รี = 1}\\
+
+ผักกาด = 2
+
+ข้าวโพด = 3
+
+ไม่เหมาะกับการปลูกพืช = 0
+
+
+\end{document}

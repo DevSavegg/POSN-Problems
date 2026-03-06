@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{เส้นทางตัวเลขพิเศษ}
+
+นภสรมีชุดตัวเลขที่เรียงกันแบบกระจัดกระจาย สิ่งที่นภสรกำลังมองหาคือ "เส้นทางตัวเลขพิเศษ"
+ที่มีคุณสมบัติ 2 ข้อ:
+
+1. เส้นทางนี้ต้องมีตัวเลขอย่างน้อย 2 ตัว
+
+2. เมื่อนำตัวเลขในเส้นทางนี้มาเรียงจากน้อยไปมาก ทุกตัว (ยกเว้นตัวแรก)
+ต้องเป็นกำลังสองของตัวก่อนหน้า
+
+\hfill\break
+
+ตัวอย่างเช่น: ถ้ามีตัวเลข 4, 16, และ 2 เมื่อเราจัดเรียงใหม่เป็น 2, 4, 16 จะเห็นว่า
+
+· 4 มาจาก 2 × 2
+
+· 16 มาจาก 4 × 4
+
+ถ้านภสรเจอเส้นทางที่มีคุณสมบัตินี้ นภสรต้องการหาว่าเส้นทางที่ยาวที่สุดมีความยาวเท่าไร
+ถ้าไม่มีเส้นทางไหนเลยที่ตรงตามเงื่อนไข ให้ตอบ -1
+
+\hfill\break
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+nums = {[}4, 3, 6, 16, 8, 2{]} & 3 &
+\begin{minipage}[t]{\linewidth}\raggedright
+เราสามารถเลือกตัวเลขบางตัว เช่น {[}4,16,2{]}\\
+และเมื่อจัดเรียงใหม่จะได้ {[}2,4,16{]} ซึ่งตรงตามเงื่อนไข ดังนั้น\\
+ความยาวของเส้นทางนี้คือ 3\\
+\strut
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+nums = {[}2, 3, 5, 6, 7{]}\\
+\strut
+\end{minipage} & -1 & \begin{minipage}[t]{\linewidth}\raggedright
+ไม่มีชุดตัวเลขใดที่สามารถสร้างเส้นทางตามกฎได้เลย ดังนั้นผลลัพธ์คือ -1\\
+\strut \\
+\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+\hfill\break
+
+\textbf{\ul{{เงื่อนไขเพิ่มเติม:}}}
+
+· ข้อมูลนำเข้ามีจำนวนตัวเลขตั้งแต่ 2 ถึง 100,000 ตัว
+
+· ค่าของแต่ละตัวเลขอยู่ระหว่าง 2 ถึง 100,000
+
+
+\subsection*{Input}
+ชุดตัวเลขที่เรียงกันแบบกระจัดกระจาย
+
+
+\subsection*{Output}
+เส้นทางตัวเลขพิเศษที่\textbf{\ul{ยาวที่สุด}}\\
+
+
+\end{document}

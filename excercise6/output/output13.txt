@@ -1,0 +1,1 @@
+lower and upper: All prime number between 100 to 110 are: 101 103 107 109

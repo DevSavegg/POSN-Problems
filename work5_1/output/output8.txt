@@ -1,0 +1,2 @@
+Sum of entered numbers: 180
+Numbers in array: 2 53 41 71 13

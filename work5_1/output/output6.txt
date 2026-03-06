@@ -1,0 +1,2 @@
+Sum of entered numbers: 224
+Numbers in array: 73 33 18 86 14

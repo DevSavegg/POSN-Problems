@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+
+\begin{document}
+
+\section*{หนึ่งล้วน}
+
+กำหนดข้อความ\texttt{s}ที่มีแต่อักขระ\texttt{0}และ\texttt{1}เท่านั้น\textbf{ให้หาจำนวนของ
+substring}ของ\texttt{s}ที่มีแต่\texttt{1}เนื่องจากคำตอบอาจจะใหญ่มากๆ ให้ตอบโดย
+mod\texttt{10e9\ +\ 7}.
+
+\textbf{( ข้อมูลเข้าอาจยาวได้ถึง 5000 อักขระ )\\
+}
+
+\hfill\break
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลเข้า
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ข้อมูลออก
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+คำอธิบาย
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+0110111\\
+\strut
+\end{minipage} & 9 & \begin{minipage}[t]{\linewidth}\raggedright
+11 -\textgreater{} 3\\
+111 -\textgreater{} 6\\
+\strut \\
+\textbf{3 + 6 = 9}\strut
+\end{minipage} \\
+\end{longtable}
+}
+
+
+\subsection*{Input}
+บรรทัดเดียว ข้อความ\texttt{s}
+
+
+\subsection*{Output}
+{ให้หาจำนวนของ substring}{ของ}\texttt{s}{ที่มีแต่}\texttt{1}\\
+
+
+\end{document}

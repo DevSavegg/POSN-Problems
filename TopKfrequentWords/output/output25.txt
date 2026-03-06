@@ -1,0 +1,6 @@
+dance 16
+apple 15
+cat 14
+juice 14
+soft 14
+at 13

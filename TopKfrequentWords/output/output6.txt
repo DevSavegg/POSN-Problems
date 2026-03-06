@@ -1,0 +1,5 @@
+eat 7
+quickly 6
+sad 6
+but 5
+cream 5

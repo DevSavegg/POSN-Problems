@@ -1,0 +1,9 @@
+grape 27
+slowly 19
+from 17
+quiet 17
+sleep 17
+to 17
+write 17
+cat 16
+in 16
